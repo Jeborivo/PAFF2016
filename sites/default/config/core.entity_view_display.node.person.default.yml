@@ -1,0 +1,41 @@
+uuid: 3527ad1a-14ad-44ce-bde7-02251c2fd5d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.field_filmography
+    - field.field.node.person.field_image
+    - field.field.node.person.field_long_text
+    - node.type.person
+  module:
+    - image
+    - text
+    - user
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  field_filmography:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_long_text:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+hidden: {  }

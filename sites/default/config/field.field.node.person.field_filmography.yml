@@ -1,0 +1,21 @@
+uuid: 9cc0f8f1-6a77-42d1-ae49-40cf08838f31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filmography
+    - node.type.person
+  module:
+    - text
+id: node.person.field_filmography
+field_name: field_filmography
+entity_type: node
+bundle: person
+label: Filmography
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
