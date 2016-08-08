@@ -1,0 +1,18 @@
+uuid: 9c6112db-c631-4830-9ab3-221d5c09a20c
+langcode: en
+status: true
+dependencies: {  }
+countryCode: KZ
+format: "%postalCode\n%administrativeArea\n%locality\n%addressLine2\n%addressLine1\n%organization\n%recipient"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: province
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{6}'
+postalCodePrefix: null

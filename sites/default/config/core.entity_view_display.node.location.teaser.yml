@@ -1,0 +1,17 @@
+uuid: 2119b39c-c5dd-44ad-808d-035771e93503
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.location
+  module:
+    - user
+id: node.location.teaser
+targetEntityType: node
+bundle: location
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: fdc8e24e-c9d7-4188-9187-bd224f51027f
+langcode: en
+status: true
+dependencies: {  }
+countryCode: JP
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality, %administrativeArea\n%postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+  - administrativeArea
+  - postalCode
+uppercaseFields:
+  - administrativeArea
+administrativeAreaType: prefecture
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{3}-?\d{4}'
+postalCodePrefix: null

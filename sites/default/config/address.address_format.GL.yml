@@ -1,0 +1,19 @@
+uuid: 5030cba9-ed15-4c85-8c6b-586a33a60642
+langcode: en
+status: true
+dependencies: {  }
+countryCode: GL
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%postalCode %locality"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+  - postalCode
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '39\d{2}'
+postalCodePrefix: null

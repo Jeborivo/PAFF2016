@@ -1,0 +1,22 @@
+uuid: c63e3c3f-ca9c-45ce-9980-596b01cdebcb
+langcode: en
+status: true
+dependencies: {  }
+countryCode: NC
+format: "%organization\n%recipient\n%addressLine1\n%addressLine2\n%postalCode %locality %sortingCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+  - postalCode
+uppercaseFields:
+  - addressLine1
+  - addressLine2
+  - locality
+  - sortingCode
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '988\d{2}'
+postalCodePrefix: null

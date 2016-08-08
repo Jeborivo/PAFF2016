@@ -1,0 +1,18 @@
+uuid: 7e565a75-7132-4e4c-aec1-b5088fcddb19
+langcode: en
+status: true
+dependencies: {  }
+countryCode: HT
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%postalCode %locality %sortingCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{4}'
+postalCodePrefix: HT

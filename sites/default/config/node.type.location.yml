@@ -1,0 +1,18 @@
+uuid: 7b0824b7-0e30-4be2-8d67-d6a0c946029b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Location
+type: location
+description: 'Location name,image,description,address,geofield'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

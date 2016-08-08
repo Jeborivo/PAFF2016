@@ -1,0 +1,20 @@
+uuid: 47fbf151-ba2e-488c-971f-aca103364e22
+langcode: en
+status: true
+dependencies: {  }
+countryCode: PN
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%sortingCode\n%locality\n%postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+  - postalCode
+uppercaseFields:
+  - locality
+  - postalCode
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: 'PCRN 1ZZ'
+postalCodePrefix: null

@@ -1,0 +1,18 @@
+uuid: da9c3979-df9e-4f5d-9f90-b75a404835b1
+langcode: en
+status: true
+dependencies: {  }
+countryCode: MG
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%postalCode %locality"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{3}'
+postalCodePrefix: null
