@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "06117f45621560451110c2dca222d5e6",
-    "content-hash": "5b95e6758e8d0a8de1a84c50d0fef760",
+    "hash": "68865f43e9889c18c1e7997db41c3590",
+    "content-hash": "7be68ebc94b9cb5bd6f07be76eb8281f",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -757,11 +757,17 @@
         },
         {
             "name": "drupal/address",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/address.git",
-                "reference": "0f31d5422582d37bc7bd775cebe689672b57dabe"
+                "reference": "436f4f45c86e1c041110f05f9cfb35ac317f9f52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0-beta3.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "commerceguys/addressing": "~0.8",
@@ -781,7 +787,7 @@
             ],
             "description": "Provides functionality for handling postal addresses.",
             "homepage": "http://drupal.org/project/address",
-            "time": "2016-06-27 10:28:24"
+            "time": "2016-06-02 19:30:35"
         },
         {
             "name": "easyrdf/easyrdf",
