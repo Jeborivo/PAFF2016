@@ -1,0 +1,9 @@
+uuid: d08b4727-8e0e-4edf-b40b-1dea96788682
+langcode: en
+status: true
+dependencies: {  }
+name: Festivals
+vid: festivals
+description: ''
+hierarchy: 0
+weight: 0

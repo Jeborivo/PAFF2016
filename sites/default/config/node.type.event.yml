@@ -1,0 +1,18 @@
+uuid: be1a90d3-0496-47bf-872b-359de56e4099
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Event
+type: event
+description: 'Beggining date, ending date, image, description, location'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
