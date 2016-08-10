@@ -1,0 +1,28 @@
+uuid: 830e5a4b-3bed-47f2-8744-f39f38468aca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sound
+    - node.type.film
+    - node.type.person
+id: node.film.field_sound
+field_name: field_sound
+entity_type: node
+bundle: film
+label: Sound
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

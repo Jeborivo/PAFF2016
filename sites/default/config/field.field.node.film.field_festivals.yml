@@ -1,0 +1,28 @@
+uuid: f16e7085-35de-48e9-b028-73073c3c9bb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_festivals
+    - node.type.film
+    - taxonomy.vocabulary.festivals
+id: node.film.field_festivals
+field_name: field_festivals
+entity_type: node
+bundle: film
+label: Festivals
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      festivals: festivals
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

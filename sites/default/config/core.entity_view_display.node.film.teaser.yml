@@ -1,0 +1,17 @@
+uuid: a8d7cb3d-ed5b-4a66-9eec-c31b0bfeca93
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.film
+  module:
+    - user
+id: node.film.teaser
+targetEntityType: node
+bundle: film
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

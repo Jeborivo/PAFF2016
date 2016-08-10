@@ -1,0 +1,21 @@
+uuid: 5d5b5d4a-f89a-42d1-b513-bc91f1611724
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duration
+    - node.type.film
+  module:
+    - text
+id: node.film.field_duration
+field_name: field_duration
+entity_type: node
+bundle: film
+label: Duration
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

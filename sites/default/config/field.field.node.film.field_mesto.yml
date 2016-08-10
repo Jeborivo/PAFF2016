@@ -1,0 +1,28 @@
+uuid: d1b827a6-3325-4beb-b555-1ebe5a54b533
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mesto
+    - node.type.film
+    - node.type.location
+id: node.film.field_mesto
+field_name: field_mesto
+entity_type: node
+bundle: film
+label: Mesto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

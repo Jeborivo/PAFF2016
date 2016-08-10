@@ -1,0 +1,20 @@
+uuid: f20b749e-34af-47fa-80ef-bd68d2b707d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_year
+field_name: field_year
+entity_type: node
+type: text
+settings:
+  max_length: 4
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 8b0d6d8d-85d2-44d8-9cb3-7892de87c6e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_screenplay
+    - node.type.film
+    - node.type.person
+id: node.film.field_screenplay
+field_name: field_screenplay
+entity_type: node
+bundle: film
+label: Screenplay
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

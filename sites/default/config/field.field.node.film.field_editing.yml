@@ -1,0 +1,28 @@
+uuid: 728aedcf-9ee4-488e-8787-7f5181d7fcb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editing
+    - node.type.film
+    - node.type.person
+id: node.film.field_editing
+field_name: field_editing
+entity_type: node
+bundle: film
+label: Editing
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

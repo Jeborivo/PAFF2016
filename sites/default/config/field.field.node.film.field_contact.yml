@@ -1,0 +1,21 @@
+uuid: a7afc02b-e8ab-4f9b-9706-5d13a8c45faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.film
+  module:
+    - text
+id: node.film.field_contact
+field_name: field_contact
+entity_type: node
+bundle: film
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

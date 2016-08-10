@@ -1,0 +1,19 @@
+uuid: 92dd4f1a-5438-41c1-bc0f-b89e475e97f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_music
+field_name: field_music
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: c246d61e-86c2-48be-893f-e6299debe347
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_and_time
+    - node.type.film
+  module:
+    - datetime
+id: node.film.field_date_and_time
+field_name: field_date_and_time
+entity_type: node
+bundle: film
+label: 'Date and time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

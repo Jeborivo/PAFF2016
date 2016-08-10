@@ -1,0 +1,22 @@
+uuid: 4935dd42-fd74-4385-8b88-85f687e8253a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.film
+  module:
+    - text
+id: node.film.body
+field_name: body
+entity_type: node
+bundle: film
+label: Synopsis
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
