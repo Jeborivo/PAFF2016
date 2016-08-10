@@ -14,4 +14,24 @@ mode: teaser
 content:
   links:
     weight: 100
-hidden: {  }
+hidden:
+  body: true
+  field_cast: true
+  field_contact: true
+  field_country: true
+  field_date_and_time: true
+  field_director: true
+  field_duration: true
+  field_editing: true
+  field_festivals: true
+  field_mesto: true
+  field_music: true
+  field_producer: true
+  field_production: true
+  field_screening: true
+  field_screenplay: true
+  field_set_design: true
+  field_shooting: true
+  field_sound: true
+  field_title_original: true
+  field_year: true
