@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
     - field.field.node.film.field_country
+    - field.field.node.film.field_date
     - field.field.node.film.field_date_and_time
     - field.field.node.film.field_director
     - field.field.node.film.field_duration
@@ -63,6 +64,14 @@ content:
     type: text_textarea
   field_country:
     weight: 42
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_date:
+    weight: 51
     settings:
       match_operator: CONTAINS
       size: 60

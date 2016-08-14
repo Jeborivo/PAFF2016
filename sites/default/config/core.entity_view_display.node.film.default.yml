@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
     - field.field.node.film.field_country
+    - field.field.node.film.field_date
     - field.field.node.film.field_date_and_time
     - field.field.node.film.field_director
     - field.field.node.film.field_duration
@@ -171,4 +172,7 @@ content:
     type: text_default
   links:
     weight: 100
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_date: true

@@ -1,26 +1,26 @@
-uuid: c4f4e566-fe4d-4141-8684-4dd2bfca12ac
+uuid: 8b9a09f7-aa19-48b8-849a-8c53cd80c8ba
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content_reference
+    - field.storage.node.field_date
     - node.type.event
-    - node.type.location
-id: node.event.field_content_reference
-field_name: field_content_reference
+    - taxonomy.vocabulary.date
+id: node.event.field_date
+field_name: field_date
 entity_type: node
 bundle: event
-label: Location
+label: Date
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      location: location
+      date: date
     sort:
       field: _none
     auto_create: false

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.field_beggining_date
     - field.field.node.event.field_content_reference
+    - field.field.node.event.field_date
     - field.field.node.event.field_en
     - field.field.node.event.field_image
     - field.field.node.event.field_long_text
@@ -58,4 +59,7 @@ content:
     type: text_default
   links:
     weight: 100
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_date: true

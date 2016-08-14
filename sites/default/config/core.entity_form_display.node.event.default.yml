@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.field_beggining_date
     - field.field.node.event.field_content_reference
+    - field.field.node.event.field_date
     - field.field.node.event.field_en
     - field.field.node.event.field_image
     - field.field.node.event.field_long_text
@@ -32,6 +33,14 @@ content:
     type: datetime_default
   field_content_reference:
     weight: 35
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_date:
+    weight: 36
     settings:
       match_operator: CONTAINS
       size: 60

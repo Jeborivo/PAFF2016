@@ -4,6 +4,27 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.film.body
+    - field.field.node.film.field_cast
+    - field.field.node.film.field_contact
+    - field.field.node.film.field_country
+    - field.field.node.film.field_date
+    - field.field.node.film.field_date_and_time
+    - field.field.node.film.field_director
+    - field.field.node.film.field_duration
+    - field.field.node.film.field_editing
+    - field.field.node.film.field_festivals
+    - field.field.node.film.field_mesto
+    - field.field.node.film.field_music
+    - field.field.node.film.field_producer
+    - field.field.node.film.field_production
+    - field.field.node.film.field_screening
+    - field.field.node.film.field_screenplay
+    - field.field.node.film.field_set_design
+    - field.field.node.film.field_shooting
+    - field.field.node.film.field_sound
+    - field.field.node.film.field_title_original
+    - field.field.node.film.field_year
     - node.type.film
   module:
     - user
@@ -19,6 +40,7 @@ hidden:
   field_cast: true
   field_contact: true
   field_country: true
+  field_date: true
   field_date_and_time: true
   field_director: true
   field_duration: true

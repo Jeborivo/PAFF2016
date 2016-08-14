@@ -1,0 +1,24 @@
+uuid: fb3867c5-a981-4cab-ada4-98da028f751f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.schedule
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__schedule_block_1
+theme: bartik
+region: sidebar_first
+weight: null
+provider: null
+plugin: 'views_block:schedule-block_1'
+settings:
+  id: 'views_block:schedule-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

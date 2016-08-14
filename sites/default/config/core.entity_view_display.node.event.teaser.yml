@@ -4,6 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_beggining_date
+    - field.field.node.event.field_content_reference
+    - field.field.node.event.field_date
+    - field.field.node.event.field_en
+    - field.field.node.event.field_image
+    - field.field.node.event.field_long_text
     - node.type.event
   module:
     - user
@@ -17,6 +23,7 @@ content:
 hidden:
   field_beggining_date: true
   field_content_reference: true
+  field_date: true
   field_en: true
   field_image: true
   field_long_text: true
