@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
     - field.field.node.film.field_country
-    - field.field.node.film.field_date
     - field.field.node.film.field_date_and_time
     - field.field.node.film.field_director
     - field.field.node.film.field_duration
@@ -40,7 +39,6 @@ hidden:
   field_cast: true
   field_contact: true
   field_country: true
-  field_date: true
   field_date_and_time: true
   field_director: true
   field_duration: true

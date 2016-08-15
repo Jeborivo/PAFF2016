@@ -1,20 +1,20 @@
-uuid: de91e6c7-68b6-47c4-bc7c-35faec991055
+uuid: 34053cb5-0004-4255-9d89-46865b4d64f0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_beggining_date
+    - field.storage.node.field_date_and_time
     - node.type.event
   module:
     - datetime
-id: node.event.field_beggining_date
-field_name: field_beggining_date
+id: node.event.field_date_and_time
+field_name: field_date_and_time
 entity_type: node
 bundle: event
 label: 'Beggining date'
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

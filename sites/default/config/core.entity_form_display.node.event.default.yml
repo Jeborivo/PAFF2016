@@ -3,9 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.event.field_beggining_date
     - field.field.node.event.field_content_reference
-    - field.field.node.event.field_date
+    - field.field.node.event.field_date_and_time
     - field.field.node.event.field_en
     - field.field.node.event.field_image
     - field.field.node.event.field_long_text
@@ -26,11 +25,6 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
-  field_beggining_date:
-    weight: 31
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
   field_content_reference:
     weight: 35
     settings:
@@ -39,14 +33,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-  field_date:
+  field_date_and_time:
     weight: 36
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: datetime_default
   field_en:
     weight: 32
     settings: {  }

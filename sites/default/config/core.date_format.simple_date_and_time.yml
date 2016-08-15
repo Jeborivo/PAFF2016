@@ -1,0 +1,8 @@
+uuid: eaa0fd65-2c29-43b2-b05e-a6d9232dc6da
+langcode: en
+status: true
+dependencies: {  }
+id: simple_date_and_time
+label: 'Simple date and time'
+locked: false
+pattern: d/m

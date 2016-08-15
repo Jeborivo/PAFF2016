@@ -3,9 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.event.field_beggining_date
     - field.field.node.event.field_content_reference
-    - field.field.node.event.field_date
+    - field.field.node.event.field_date_and_time
     - field.field.node.event.field_en
     - field.field.node.event.field_image
     - field.field.node.event.field_long_text
@@ -20,14 +19,6 @@ targetEntityType: node
 bundle: event
 mode: default
 content:
-  field_beggining_date:
-    weight: 101
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
   field_content_reference:
     weight: 105
     label: above
@@ -35,6 +26,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_date_and_time:
+    weight: 106
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
   field_en:
     weight: 102
     label: above
@@ -61,5 +60,4 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_date: true
+hidden: {  }
