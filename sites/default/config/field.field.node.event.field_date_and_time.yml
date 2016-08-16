@@ -11,7 +11,7 @@ id: node.event.field_date_and_time
 field_name: field_date_and_time
 entity_type: node
 bundle: event
-label: 'Beggining date'
+label: 'Beginning date'
 description: ''
 required: false
 translatable: true
