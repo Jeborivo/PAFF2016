@@ -10,7 +10,8 @@
         "phayes/geoPHP": "dev-master",
         "drupal/geofield": "1.x-dev",
         "drupal/geocoder": "2.x",
-        "drupal/leaflet": "dev-1.x"
+        "drupal/leaflet": "dev-1.x",
+        "drupal/leaflet_more_maps": "dev-1.x"
     },
     "replace": {
         "drupal/core": "~8.1"

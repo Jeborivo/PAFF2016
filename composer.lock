@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "baeee5f6e469792814515cdf4be9c4af",
-    "content-hash": "26094523487f6b8538e27d30bd5000a0",
+    "hash": "f07e763dc5313ca48731582abf0a4a46",
+    "content-hash": "9fd4f7326c7667efe2919744b645f1e0",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -1007,6 +1007,43 @@
                 "source": "http://cgit.drupalcode.org/leaflet"
             },
             "time": "2016-04-04 21:22:53"
+        },
+        {
+            "name": "drupal/leaflet_more_maps",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/leaflet_more_maps",
+                "reference": "a7034186237e84eb88ed45d09fe8f8ff58704147"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2+0-dev",
+                    "datestamp": "1363957739"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RdeBoer",
+                    "homepage": "https://www.drupal.org/user/404007"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/leaflet_more_maps",
+            "support": {
+                "source": "http://cgit.drupalcode.org/leaflet_more_maps"
+            },
+            "time": "2013-08-07 05:00:43"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -4927,7 +4964,8 @@
         "drupal/address": 20,
         "phayes/geophp": 20,
         "drupal/geofield": 20,
-        "drupal/leaflet": 20
+        "drupal/leaflet": 20,
+        "drupal/leaflet_more_maps": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
