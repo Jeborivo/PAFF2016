@@ -6,7 +6,21 @@ dependencies:
     - field.storage.node.field_geofield
     - node.type.location
   module:
+    - geocoder_field
     - geofield
+third_party_settings:
+  geocoder_field:
+    method: source
+    field: field_address
+    plugins:
+      - googlemaps
+      - bingmaps
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
 id: node.location.field_geofield
 field_name: field_geofield
 entity_type: node

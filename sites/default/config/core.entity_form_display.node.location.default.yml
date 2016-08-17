@@ -11,7 +11,6 @@ dependencies:
     - node.type.location
   module:
     - address
-    - geofield
     - image
     - path
     - text
@@ -31,12 +30,6 @@ content:
       default_country: null
     third_party_settings: {  }
     type: address_default
-  field_geofield:
-    weight: 34
-    settings:
-      html5_geolocation: false
-    third_party_settings: {  }
-    type: geofield_latlon
   field_image:
     weight: 32
     settings:
@@ -83,4 +76,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_geofield: true

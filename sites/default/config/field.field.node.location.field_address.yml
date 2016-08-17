@@ -18,16 +18,17 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  available_countries: {  }
+  available_countries:
+    RS: RS
   fields:
-    administrativeArea: administrativeArea
     locality: locality
-    dependentLocality: dependentLocality
     postalCode: postalCode
-    sortingCode: sortingCode
     addressLine1: addressLine1
-    addressLine2: addressLine2
-    organization: organization
-    recipient: recipient
+    administrativeArea: '0'
+    dependentLocality: '0'
+    sortingCode: '0'
+    addressLine2: '0'
+    organization: '0'
+    recipient: '0'
   langcode_override: ''
 field_type: address
