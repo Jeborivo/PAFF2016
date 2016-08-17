@@ -9,7 +9,8 @@
         "drupal/address": "8.1.x-dev",
         "phayes/geoPHP": "dev-master",
         "drupal/geofield": "1.x-dev",
-        "drupal/geocoder": "2.x"
+        "drupal/geocoder": "2.x",
+        "drupal/leaflet": "1.x"
     },
     "replace": {
         "drupal/core": "~8.1"

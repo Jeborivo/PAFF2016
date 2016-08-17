@@ -5024,5 +5024,69 @@
         "support": {
             "source": "http://cgit.drupalcode.org/geocoder"
         }
+    },
+    {
+        "name": "drupal/leaflet",
+        "version": "1.0.0-alpha1",
+        "version_normalized": "1.0.0.0-alpha1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/leaflet",
+            "reference": "8.x-1.0-alpha1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.0-alpha1.zip",
+            "reference": null,
+            "shasum": "ed292420f94b9f3f3dd7db5eeccbc9e7dec55535"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "suggest": {
+            "drupal/core": "Required by drupal/leaflet_views"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha1",
+                "datestamp": "1456138439"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "RdeBoer",
+                "homepage": "https://www.drupal.org/user/404007"
+            },
+            {
+                "name": "gcb",
+                "homepage": "https://www.drupal.org/user/1682976"
+            },
+            {
+                "name": "levelos",
+                "homepage": "https://www.drupal.org/user/54135"
+            },
+            {
+                "name": "pvhee",
+                "homepage": "https://www.drupal.org/user/108811"
+            },
+            {
+                "name": "seanberto",
+                "homepage": "https://www.drupal.org/user/54109"
+            }
+        ],
+        "description": "Provides the leaflet module.",
+        "homepage": "https://www.drupal.org/project/leaflet",
+        "support": {
+            "source": "http://cgit.drupalcode.org/leaflet"
+        }
     }
 ]
