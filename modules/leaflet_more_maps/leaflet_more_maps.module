@@ -6,6 +6,8 @@
  * All maps support zoom levels 0..18, except where stated otherwise.
  */
 
+use Drupal\Component\Utility\Unicode;
+
 const LEAFLET_MORE_MAPS_NO_CUSTOM_MAPS = 3;
 
 /**
@@ -37,7 +39,7 @@ function leaflet_more_maps_leaflet_map_info() {
   $map_info = array();
   _leaflet_more_maps_assemble_default_map_info($map_info, $default_settings);
 
-  $custom_maps = config('leaflet_more_maps.settings')->get('leaflet_more_maps_custom_maps', array());
+  $custom_maps = \Drupal::config('leaflet_more_maps.settings')->get('leaflet_more_maps_custom_maps', array());
 
   foreach ($custom_maps as $custom_map) {
     _leaflet_more_maps_assemble_custom_map_info(
@@ -54,14 +56,7 @@ function leaflet_more_maps_leaflet_map_info() {
  * Preprocess function for leaflet_more_maps.
  */
 function leaflet_more_maps_preprocess_leaflet_map(&$variables) {
-  $path = drupal_get_path('module', 'leaflet_more_maps');
-  // Increase weight so we're included after 'leaflet.drupal.js'
-  $options = array('type' => 'file', 'weight' => 1);
-  drupal_add_js("$path/leaflet_more_maps.js", $options);
-}
-
-function leaflet_more_maps_js_alter(&$javascript) {
-  $js_file = drupal_get_path('module', 'leaflet_more_maps') . '/leaflet_more_maps.js';
+  $variables['#attached']['library'][] = 'leaflet_more_maps/leaflet-more-maps';
 }
 
 /**
@@ -82,13 +77,13 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
   $zxy = '{z}/{x}/{y}.png';
   // As used by Esri.
   $zyx = '{z}/{y}/{x}.png';
-  
+
   // Google and Yandex also use x, y and z, but require different URL query
   // templates, see below.
   // Bing uses the quadtree system whereby x, y and z are encoded in a sequence
   // of digits in the range 0..3. See leaflet_more_maps.js for the conversion
   // algorithm.
-  
+
   $attr_bing = 'Tiles <a href="http://www.bing.com/maps">Bing</a> &copy; Microsoft and suppliers';
   $map_info['bing'] = array(
     'label' => 'Bing road & satellite & hybrid (zoom 1..18)',
@@ -147,32 +142,32 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
     $url_template = $prot . "server.arcgisonline.com/ArcGIS/rest/services/$code/MapServer/tile/$zyx";
     switch ($esri_name) {
       case 'NatGeo World Map':
-        $label = t('Esri National Geographic (zoom 0..12)');
+        $label = 'Esri National Geographic (zoom 0..12)';
         $settings['maxZoom'] = 12;
         break;
 
       case 'World Imagery':
-        $label = t('Esri World Imagery (zoom 0..17)');
+        $label = 'Esri World Imagery (zoom 0..17)';
         $settings['maxZoom'] = 17;
         break;
 
       case 'World Physical Map':
-        $label = t('Esri Physical (zoom 0..8)');
+        $label = 'Esri Physical (zoom 0..8)';
         $settings['maxZoom'] = 8;
         break;
 
       case 'Ocean BaseMap':
-        $label = t('Esri Ocean (zoom 0..10)');
+        $label = 'Esri Ocean (zoom 0..10)';
         $settings['maxZoom'] = 10;
         break;
 
       case 'Specialty/Soil Survey Map':
-        $label = t('Esri Soil Survey (North America, zoom 0..16)');
+        $label = 'Esri Soil Survey (North America, zoom 0..16)';
         $settings['maxZoom'] = 16;
         break;
 
       case 'Specialty/World Navigation Charts':
-        $label = t('Esri Navigation Charts (parts of the world, zoom 0..10)');
+        $label = 'Esri Navigation Charts (parts of the world, zoom 0..10)';
         $settings['maxZoom'] = 10;
         break;
 
@@ -180,7 +175,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
         $label = "Esri $esri_name (zoom 0..18)";
         $settings['maxZoom'] = 18;
     }
-    $map_info['esri-' . drupal_strtolower($code)] = array(
+    $map_info['esri-' . Unicode::strtolower($code)] = array(
       'label' => $label,
       'description' => $label,
       'settings' => $settings,
@@ -245,7 +240,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
         'urlTemplate' => $prot . 'mt{s}.googleapis.com/vt?x={x}&y={y}&z={z}',
         'options' => array(
           'attribution' => $attr_google,
-          'detectRetina' => FALSE,
+          'detectRetina' => TRUE,
           'subdomains' => array(0, 1, 2, 3),
         ),
       ),
@@ -296,7 +291,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
   );
   $attr_mapbox = 'Tiles by <a href="http://mapbox.com">MapBox</a>. Map data &copy; <a href="http://openstreetap.org">OpenStreetMap</a> and contributors';
   foreach ($mapbox_names as $mapbox_name) {
-    $code = drupal_strtolower($mapbox_name);
+    $code = Unicode::strtolower($mapbox_name);
     $label = "MapBox $mapbox_name (zoom 0..17)";
     $url_template = $prot . "{s}.tiles.mapbox.com/v3/mapbox.mapbox-$code/$zxy";
     $map_info["mapbox-$code"] = array(
@@ -423,7 +418,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
   $attr_stamen = 'Tiles by <a href="http://stamen.com">Stamen Design</a> under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ' . $attr_osm;
   $stamen_names = array('Toner', 'Watercolor'/* , 'Terrain'*/);
   foreach ($stamen_names as $stamen_name) {
-    $code = drupal_strtolower($stamen_name);
+    $code = Unicode::strtolower($stamen_name);
     $label = "Stamen $stamen_name (zoom 0..18)";
     $t = t('@label , USA only', array('@label' => $label));
     $url_template = $prot . "{s}.tile.stamen.com/$code/$zxy";
@@ -486,17 +481,4 @@ function _leaflet_more_maps_assemble_custom_map_info($custom_map_key, $selected_
   }
   $has_layer_control = count($map_info["~$custom_map_key"]['layers']) > 1;
   $map_info["~$custom_map_key"]['settings'] = array('layerControl' => $has_layer_control) + $default_settings;
-}
-
-/**
- * Implements hook_menu().
- */
-function leaflet_more_maps_menu() {
-  // Put the administrative settings under System on the Configuration page.
-  $items['admin/config/system/leaflet-more-maps'] = array(
-    'title' => 'Leaflet More Maps',
-    'description' => 'Assemble custom maps from available layers.',
-    'route_name' => 'leaflet_more_maps_settings',
-  );
-  return $items;
 }

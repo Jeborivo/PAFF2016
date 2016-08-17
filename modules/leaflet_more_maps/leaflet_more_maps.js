@@ -1,13 +1,14 @@
 (function ($) {
 
-  Drupal.leaflet._create_layer_orig = Drupal.leaflet.create_layer;
+  Drupal.Leaflet.prototype._create_layer_orig = Drupal.Leaflet.prototype.create_layer;
 
-  Drupal.leaflet.create_layer = function(layer, key) {
+  Drupal.Leaflet.prototype.create_layer = function(layer, key) {
     if (layer.type === 'quad') {
       var mapLayer = new L.TileLayerQuad(layer.urlTemplate, layer.options);
       mapLayer._leaflet_id = key;
       return mapLayer;
     }
+
     if (layer.type === 'google' && layer.options.detectRetina && L.Browser.retina) {
       layer.urlTemplate += '&style=high_dpi&w=512';
       layer.options.tileSize = 512;
@@ -16,7 +17,7 @@
       return mapLayer;
     }
     // Default to the original code;
-    return Drupal.leaflet._create_layer_orig(layer, key);
+    return Drupal.Leaflet.prototype._create_layer_orig(layer, key);
   };
 
 })(jQuery);

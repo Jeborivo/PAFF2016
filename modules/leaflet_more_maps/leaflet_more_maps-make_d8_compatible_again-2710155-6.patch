@@ -1,0 +1,335 @@
+diff --git a/leaflet_more_maps.js b/leaflet_more_maps.js
+index de3341e..5645600 100644
+--- a/leaflet_more_maps.js
++++ b/leaflet_more_maps.js
+@@ -1,13 +1,14 @@
+ (function ($) {
+ 
+-  Drupal.leaflet._create_layer_orig = Drupal.leaflet.create_layer;
++  Drupal.Leaflet.prototype._create_layer_orig = Drupal.Leaflet.prototype.create_layer;
+ 
+-  Drupal.leaflet.create_layer = function(layer, key) {
++  Drupal.Leaflet.prototype.create_layer = function(layer, key) {
+     if (layer.type === 'quad') {
+       var mapLayer = new L.TileLayerQuad(layer.urlTemplate, layer.options);
+       mapLayer._leaflet_id = key;
+       return mapLayer;
+     }
++
+     if (layer.type === 'google' && layer.options.detectRetina && L.Browser.retina) {
+       layer.urlTemplate += '&style=high_dpi&w=512';
+       layer.options.tileSize = 512;
+@@ -16,7 +17,7 @@
+       return mapLayer;
+     }
+     // Default to the original code;
+-    return Drupal.leaflet._create_layer_orig(layer, key);
++    return Drupal.Leaflet.prototype._create_layer_orig(layer, key);
+   };
+ 
+ })(jQuery);
+diff --git a/leaflet_more_maps.libraries.yml b/leaflet_more_maps.libraries.yml
+new file mode 100644
+index 0000000..ead91bf
+--- /dev/null
++++ b/leaflet_more_maps.libraries.yml
+@@ -0,0 +1,7 @@
++leaflet-more-maps:
++    js:
++      leaflet_more_maps.js: {}
++    dependencies:
++      - leaflet/leaflet
++      - core/jquery
++      - core/drupal
+diff --git a/leaflet_more_maps.links.menu.yml b/leaflet_more_maps.links.menu.yml
+new file mode 100644
+index 0000000..8a7508c
+--- /dev/null
++++ b/leaflet_more_maps.links.menu.yml
+@@ -0,0 +1,6 @@
++leaflet_more_maps.settings:
++  title: 'Leaflet More Maps configuration'
++  description: 'Assemble custom maps from available layers.'
++  route_name: leaflet_more_maps.settings
++  weight: 15
++  parent: system.admin_config_system
+diff --git a/leaflet_more_maps.module b/leaflet_more_maps.module
+index 1674e12..81a0eaa 100644
+--- a/leaflet_more_maps.module
++++ b/leaflet_more_maps.module
+@@ -6,6 +6,8 @@
+  * All maps support zoom levels 0..18, except where stated otherwise.
+  */
+ 
++use Drupal\Component\Utility\Unicode;
++
+ const LEAFLET_MORE_MAPS_NO_CUSTOM_MAPS = 3;
+ 
+ /**
+@@ -37,7 +39,7 @@ function leaflet_more_maps_leaflet_map_info() {
+   $map_info = array();
+   _leaflet_more_maps_assemble_default_map_info($map_info, $default_settings);
+ 
+-  $custom_maps = config('leaflet_more_maps.settings')->get('leaflet_more_maps_custom_maps', array());
++  $custom_maps = \Drupal::config('leaflet_more_maps.settings')->get('leaflet_more_maps_custom_maps', array());
+ 
+   foreach ($custom_maps as $custom_map) {
+     _leaflet_more_maps_assemble_custom_map_info(
+@@ -54,14 +56,7 @@ function leaflet_more_maps_leaflet_map_info() {
+  * Preprocess function for leaflet_more_maps.
+  */
+ function leaflet_more_maps_preprocess_leaflet_map(&$variables) {
+-  $path = drupal_get_path('module', 'leaflet_more_maps');
+-  // Increase weight so we're included after 'leaflet.drupal.js'
+-  $options = array('type' => 'file', 'weight' => 1);
+-  drupal_add_js("$path/leaflet_more_maps.js", $options);
+-}
+-
+-function leaflet_more_maps_js_alter(&$javascript) {
+-  $js_file = drupal_get_path('module', 'leaflet_more_maps') . '/leaflet_more_maps.js';
++  $variables['#attached']['library'][] = 'leaflet_more_maps/leaflet-more-maps';
+ }
+ 
+ /**
+@@ -82,13 +77,13 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
+   $zxy = '{z}/{x}/{y}.png';
+   // As used by Esri.
+   $zyx = '{z}/{y}/{x}.png';
+-  
++
+   // Google and Yandex also use x, y and z, but require different URL query
+   // templates, see below.
+   // Bing uses the quadtree system whereby x, y and z are encoded in a sequence
+   // of digits in the range 0..3. See leaflet_more_maps.js for the conversion
+   // algorithm.
+-  
++
+   $attr_bing = 'Tiles <a href="http://www.bing.com/maps">Bing</a> &copy; Microsoft and suppliers';
+   $map_info['bing'] = array(
+     'label' => 'Bing road & satellite & hybrid (zoom 1..18)',
+@@ -147,32 +142,32 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
+     $url_template = $prot . "server.arcgisonline.com/ArcGIS/rest/services/$code/MapServer/tile/$zyx";
+     switch ($esri_name) {
+       case 'NatGeo World Map':
+-        $label = t('Esri National Geographic (zoom 0..12)');
++        $label = 'Esri National Geographic (zoom 0..12)';
+         $settings['maxZoom'] = 12;
+         break;
+ 
+       case 'World Imagery':
+-        $label = t('Esri World Imagery (zoom 0..17)');
++        $label = 'Esri World Imagery (zoom 0..17)';
+         $settings['maxZoom'] = 17;
+         break;
+ 
+       case 'World Physical Map':
+-        $label = t('Esri Physical (zoom 0..8)');
++        $label = 'Esri Physical (zoom 0..8)';
+         $settings['maxZoom'] = 8;
+         break;
+ 
+       case 'Ocean BaseMap':
+-        $label = t('Esri Ocean (zoom 0..10)');
++        $label = 'Esri Ocean (zoom 0..10)';
+         $settings['maxZoom'] = 10;
+         break;
+ 
+       case 'Specialty/Soil Survey Map':
+-        $label = t('Esri Soil Survey (North America, zoom 0..16)');
++        $label = 'Esri Soil Survey (North America, zoom 0..16)';
+         $settings['maxZoom'] = 16;
+         break;
+ 
+       case 'Specialty/World Navigation Charts':
+-        $label = t('Esri Navigation Charts (parts of the world, zoom 0..10)');
++        $label = 'Esri Navigation Charts (parts of the world, zoom 0..10)';
+         $settings['maxZoom'] = 10;
+         break;
+ 
+@@ -180,7 +175,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
+         $label = "Esri $esri_name (zoom 0..18)";
+         $settings['maxZoom'] = 18;
+     }
+-    $map_info['esri-' . drupal_strtolower($code)] = array(
++    $map_info['esri-' . Unicode::strtolower($code)] = array(
+       'label' => $label,
+       'description' => $label,
+       'settings' => $settings,
+@@ -245,7 +240,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
+         'urlTemplate' => $prot . 'mt{s}.googleapis.com/vt?x={x}&y={y}&z={z}',
+         'options' => array(
+           'attribution' => $attr_google,
+-          'detectRetina' => FALSE,
++          'detectRetina' => TRUE,
+           'subdomains' => array(0, 1, 2, 3),
+         ),
+       ),
+@@ -296,7 +291,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
+   );
+   $attr_mapbox = 'Tiles by <a href="http://mapbox.com">MapBox</a>. Map data &copy; <a href="http://openstreetap.org">OpenStreetMap</a> and contributors';
+   foreach ($mapbox_names as $mapbox_name) {
+-    $code = drupal_strtolower($mapbox_name);
++    $code = Unicode::strtolower($mapbox_name);
+     $label = "MapBox $mapbox_name (zoom 0..17)";
+     $url_template = $prot . "{s}.tiles.mapbox.com/v3/mapbox.mapbox-$code/$zxy";
+     $map_info["mapbox-$code"] = array(
+@@ -423,7 +418,7 @@ function _leaflet_more_maps_assemble_default_map_info(&$map_info, $default_setti
+   $attr_stamen = 'Tiles by <a href="http://stamen.com">Stamen Design</a> under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ' . $attr_osm;
+   $stamen_names = array('Toner', 'Watercolor'/* , 'Terrain'*/);
+   foreach ($stamen_names as $stamen_name) {
+-    $code = drupal_strtolower($stamen_name);
++    $code = Unicode::strtolower($stamen_name);
+     $label = "Stamen $stamen_name (zoom 0..18)";
+     $t = t('@label , USA only', array('@label' => $label));
+     $url_template = $prot . "{s}.tile.stamen.com/$code/$zxy";
+@@ -487,16 +482,3 @@ function _leaflet_more_maps_assemble_custom_map_info($custom_map_key, $selected_
+   $has_layer_control = count($map_info["~$custom_map_key"]['layers']) > 1;
+   $map_info["~$custom_map_key"]['settings'] = array('layerControl' => $has_layer_control) + $default_settings;
+ }
+-
+-/**
+- * Implements hook_menu().
+- */
+-function leaflet_more_maps_menu() {
+-  // Put the administrative settings under System on the Configuration page.
+-  $items['admin/config/system/leaflet-more-maps'] = array(
+-    'title' => 'Leaflet More Maps',
+-    'description' => 'Assemble custom maps from available layers.',
+-    'route_name' => 'leaflet_more_maps_settings',
+-  );
+-  return $items;
+-}
+diff --git a/leaflet_more_maps.routing.yml b/leaflet_more_maps.routing.yml
+index 8b4e1d7..f930b90 100644
+--- a/leaflet_more_maps.routing.yml
++++ b/leaflet_more_maps.routing.yml
+@@ -1,7 +1,8 @@
+-leaflet_more_maps_settings:
+-  pattern: '/admin/config/system/leaflet_more_maps'
++leaflet_more_maps.settings:
++  path: '/admin/config/system/leaflet_more_maps'
+   defaults:
+-    _form: 'Drupal\leaflet_more_maps\Form\LeafletMoreMapsSettingsForm'
++    _form: '\Drupal\leaflet_more_maps\Form\SettingsForm'
++    _title: 'Leaflet More Maps configuration'
+   requirements:
+     _permission: 'administer site configuration'
+ 
+diff --git a/src/Form/SettingsForm.php b/src/Form/SettingsForm.php
+new file mode 100644
+index 0000000..3efd091
+--- /dev/null
++++ b/src/Form/SettingsForm.php
+@@ -0,0 +1,112 @@
++<?php
++
++/**
++ * @file
++ * Contains \Drupal\leaflet_more_maps\Form\SettingsForm.
++ */
++
++namespace Drupal\leaflet_more_maps\Form;
++
++use Drupal\Core\Form\ConfigFormBase;
++use Drupal\Core\Form\FormStateInterface;
++
++class SettingsForm extends ConfigFormBase {
++
++  /**
++   * {@inheritdoc}.
++   */
++  public function getFormID() {
++    return 'leaflet_more_maps_settings';
++  }
++
++  /**
++   * {@inheritdoc}.
++   */
++  public function buildForm(array $form, FormStateInterface $form_state) {
++    $map_info = array();
++
++    _leaflet_more_maps_assemble_default_map_info($map_info);
++
++    $all_layer_keys = array();
++    foreach ($map_info as $map_key => $map) {
++      foreach ($map['layers'] as $layer_key => $layer) {
++        // Unique.
++        $all_layer_keys["$map_key $layer_key"] = "$map_key $layer_key";
++      }
++    }
++    $config = $this->configFactory->get('leaflet_more_maps.settings');
++    $custom_map_layers = $config->get('leaflet_more_maps_custom_maps', array());
++
++    if (empty($custom_map_layers)) {
++      for ($i = 1; $i <= LEAFLET_MORE_MAPS_NO_CUSTOM_MAPS; $i++) {
++        $custom_map_layers[$i] = array(
++          'map-key' => '',
++          'layer-keys' => array(),
++          'reverse-order' => FALSE,
++        );
++      }
++    }
++    for ($i = 1; $i <= LEAFLET_MORE_MAPS_NO_CUSTOM_MAPS; $i++) {
++      $form['map'][$i] = array(
++        '#type' => 'fieldset',
++        '#collapsible' => TRUE,
++        '#collapsed' => $i > 1,
++        '#title' => t('Custom map #@number layer selection', array('@number' => $i)),
++      );
++      $form['map'][$i]['map-key'] = array(
++        '#type' => 'textfield',
++        '#title' => t('Name of custom map #@number in the administrative UI', array('@number' => $i)),
++        '#default_value' => $custom_map_layers[$i]['map-key'],
++        '#description' => t('Use a blank field to remove this layer configuration from the set of selectable maps.'),
++      );
++      $form['map'][$i]['layer-keys'] = array(
++        '#type' => 'checkboxes',
++        '#title' => t('Select one or more layers to be included in this map.'),
++        '#options' => $all_layer_keys,
++        '#default_value' => $custom_map_layers[$i]['layer-keys'],
++        '#description' => t('If you select two or more layers, these will be selectable via radio buttons in the layer switcher on your map.'),
++      );
++      $form['map'][$i]['reverse-order'] = array(
++        '#type' => 'checkbox',
++        '#title' => t('Reverse order in layer switcher'),
++        '#default_value' => $custom_map_layers[$i]['reverse-order'],
++        '#description' => t('The last layer in the switcher will be the default.'),
++      );
++      // Organise the $form_state['values'] structure available after submission.
++      $form['map'][$i]['map-key']['#parents'] = array(
++        'map', $i, 'map-key');
++      $form['map'][$i]['layer-keys']['#parents'] = array(
++        'map', $i, 'layer-keys');
++      $form['map'][$i]['reverse-order']['#parents'] = array(
++        'map', $i, 'reverse-order');
++    }
++
++    return parent::buildForm($form, $form_state);
++  }
++
++  /**
++   * {@inheritdoc}.
++   */
++  public function submitForm(array &$form, FormStateInterface $form_state) {
++    $custom_maps = $form_state->getValue('map');
++
++    // Clear out the unticked boxes before saving the form.
++    foreach ($custom_maps as &$custom_map) {
++      $custom_map['layer-keys'] = array_filter($custom_map['layer-keys']);
++    }
++
++    $this->config('leaflet_more_maps.settings')
++      ->set('leaflet_more_maps_custom_maps', $custom_maps)
++      ->save();
++
++    parent::submitForm($form, $form_state);
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  protected function getEditableConfigNames() {
++    return ['leaflet_more_maps.settings'];
++  }
++
++}
