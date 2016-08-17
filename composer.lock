@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6d6ee014d0f57d25cebae766fc879eb0",
-    "content-hash": "47b1bc704bdd5ef5646c4284beeb6503",
+    "hash": "0a63462e1b8bf5d7be7ad1863e5b5476",
+    "content-hash": "5c189658d9798ea722f2fd6560d2f193",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -962,7 +962,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.0-alpha1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha1",
                 "shasum": "ed292420f94b9f3f3dd7db5eeccbc9e7dec55535"
             },
             "require": {
@@ -1011,6 +1011,48 @@
             "homepage": "https://www.drupal.org/project/leaflet",
             "support": {
                 "source": "http://cgit.drupalcode.org/leaflet"
+            }
+        },
+        {
+            "name": "drupal/leaflet_more_maps",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/leaflet_more_maps",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/leaflet_more_maps-8.x-1.0-alpha2.zip",
+                "reference": null,
+                "shasum": "3c285ae879aeca1455afa9703b2b98ed1bcc3173"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1375880542"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RdeBoer",
+                    "homepage": "https://www.drupal.org/user/404007"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/leaflet_more_maps",
+            "support": {
+                "source": "http://cgit.drupalcode.org/leaflet_more_maps"
             }
         },
         {
