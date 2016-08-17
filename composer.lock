@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "59208a57393e1ec7629f8b4146dfa464",
-    "content-hash": "79892916de8c48f82e81413ef183765c",
+    "hash": "baeee5f6e469792814515cdf4be9c4af",
+    "content-hash": "26094523487f6b8538e27d30bd5000a0",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -950,6 +950,63 @@
                 "issues": "https://www.drupal.org/project/issues/geofield",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
+        },
+        {
+            "name": "drupal/leaflet",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/leaflet",
+                "reference": "a3274e487039c5066eea2f394185b04ea10d1c75"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/leaflet_views"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1+2-dev",
+                    "datestamp": "1459804739"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RdeBoer",
+                    "homepage": "https://www.drupal.org/user/404007"
+                },
+                {
+                    "name": "gcb",
+                    "homepage": "https://www.drupal.org/user/1682976"
+                },
+                {
+                    "name": "levelos",
+                    "homepage": "https://www.drupal.org/user/54135"
+                },
+                {
+                    "name": "pvhee",
+                    "homepage": "https://www.drupal.org/user/108811"
+                },
+                {
+                    "name": "seanberto",
+                    "homepage": "https://www.drupal.org/user/54109"
+                }
+            ],
+            "description": "Provides the leaflet module.",
+            "homepage": "https://www.drupal.org/project/leaflet",
+            "support": {
+                "source": "http://cgit.drupalcode.org/leaflet"
+            },
+            "time": "2016-04-04 21:22:53"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -4869,7 +4926,8 @@
     "stability-flags": {
         "drupal/address": 20,
         "phayes/geophp": 20,
-        "drupal/geofield": 20
+        "drupal/geofield": 20,
+        "drupal/leaflet": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
