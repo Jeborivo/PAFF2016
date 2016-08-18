@@ -51,7 +51,7 @@ display:
         type: some
         options:
           items_per_page: 10
-          offset: 0
+          offset: 1
       style:
         type: default
       row:
@@ -217,7 +217,13 @@ display:
       defaults:
         link_display: false
         link_url: false
+        pager: false
       link_url: ''
+      pager:
+        type: some
+        options:
+          items_per_page: 1
+          offset: null
     cache_metadata:
       max-age: -1
       contexts:
@@ -234,6 +240,13 @@ display:
     display_options:
       display_extenders: {  }
       path: news
+      pager:
+        type: some
+        options:
+          items_per_page: 10
+          offset: 1
+      defaults:
+        pager: false
     cache_metadata:
       max-age: -1
       contexts:
