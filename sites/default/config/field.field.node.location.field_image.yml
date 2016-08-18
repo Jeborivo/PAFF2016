@@ -12,7 +12,7 @@ field_name: field_image
 entity_type: node
 bundle: location
 label: Image
-description: ''
+description: Image
 required: false
 translatable: true
 default_value: {  }

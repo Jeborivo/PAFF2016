@@ -10,8 +10,8 @@ id: node.film.field_mesto
 field_name: field_mesto
 entity_type: node
 bundle: film
-label: Mesto
-description: ''
+label: Location
+description: Location
 required: false
 translatable: false
 default_value: {  }

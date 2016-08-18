@@ -11,7 +11,7 @@ field_name: field_producer
 entity_type: node
 bundle: film
 label: Producer
-description: ''
+description: Producer
 required: false
 translatable: false
 default_value: {  }

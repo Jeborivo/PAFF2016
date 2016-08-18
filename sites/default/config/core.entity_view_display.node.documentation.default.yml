@@ -1,0 +1,32 @@
+uuid: a15a2f3e-b32f-453a-8d93-8f0b6833e60b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.documentation.field_description
+    - field.field.node.documentation.field_file
+    - node.type.documentation
+  module:
+    - file
+    - text
+    - user
+id: node.documentation.default
+targetEntityType: node
+bundle: documentation
+mode: default
+content:
+  field_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_file:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  links:
+    weight: 100
+hidden: {  }

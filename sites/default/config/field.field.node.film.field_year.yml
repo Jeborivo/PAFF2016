@@ -6,13 +6,25 @@ dependencies:
     - field.storage.node.field_year
     - node.type.film
   module:
+    - geocoder_field
     - text
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: title
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
 id: node.film.field_year
 field_name: field_year
 entity_type: node
 bundle: film
 label: Year
-description: ''
+description: Year
 required: false
 translatable: false
 default_value: {  }

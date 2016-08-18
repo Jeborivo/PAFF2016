@@ -6,13 +6,25 @@ dependencies:
     - field.storage.node.field_long_text
     - node.type.location
   module:
+    - geocoder_field
     - text
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: title
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
 id: node.location.field_long_text
 field_name: field_long_text
 entity_type: node
 bundle: location
 label: Description
-description: ''
+description: Description
 required: false
 translatable: true
 default_value: {  }

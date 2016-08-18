@@ -11,7 +11,7 @@ field_name: field_set_design
 entity_type: node
 bundle: film
 label: 'Set design'
-description: ''
+description: 'Set design'
 required: false
 translatable: false
 default_value: {  }

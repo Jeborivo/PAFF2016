@@ -11,7 +11,7 @@ field_name: field_music
 entity_type: node
 bundle: film
 label: Music
-description: ''
+description: Music
 required: false
 translatable: false
 default_value: {  }

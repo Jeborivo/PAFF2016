@@ -1,0 +1,17 @@
+uuid: 215881e2-cc6b-454f-b5a9-8bc3e73dcdb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.documentation
+  module:
+    - user
+id: node.documentation.teaser
+targetEntityType: node
+bundle: documentation
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

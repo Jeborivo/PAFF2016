@@ -6,13 +6,25 @@ dependencies:
     - field.storage.node.body
     - node.type.film
   module:
+    - geocoder_field
     - text
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: title
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
 id: node.film.body
 field_name: body
 entity_type: node
 bundle: film
 label: Synopsis
-description: ''
+description: Synopsis
 required: false
 translatable: true
 default_value: {  }

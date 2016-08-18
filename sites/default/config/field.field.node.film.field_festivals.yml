@@ -11,7 +11,7 @@ field_name: field_festivals
 entity_type: node
 bundle: film
 label: Festivals
-description: ''
+description: Festivals
 required: false
 translatable: false
 default_value: {  }

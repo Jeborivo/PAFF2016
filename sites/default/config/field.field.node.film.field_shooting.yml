@@ -11,7 +11,7 @@ field_name: field_shooting
 entity_type: node
 bundle: film
 label: Shooting
-description: ''
+description: Shooting
 required: false
 translatable: false
 default_value: {  }

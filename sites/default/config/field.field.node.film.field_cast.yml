@@ -11,7 +11,7 @@ field_name: field_cast
 entity_type: node
 bundle: film
 label: Cast
-description: ''
+description: Cast
 required: false
 translatable: false
 default_value: {  }

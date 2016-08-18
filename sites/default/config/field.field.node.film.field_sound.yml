@@ -11,7 +11,7 @@ field_name: field_sound
 entity_type: node
 bundle: film
 label: Sound
-description: ''
+description: Sound
 required: false
 translatable: false
 default_value: {  }

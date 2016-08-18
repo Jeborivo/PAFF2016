@@ -11,7 +11,7 @@ field_name: field_screenplay
 entity_type: node
 bundle: film
 label: Screenplay
-description: ''
+description: Screenplay
 required: false
 translatable: false
 default_value: {  }

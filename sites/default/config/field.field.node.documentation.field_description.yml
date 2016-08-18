@@ -1,10 +1,10 @@
-uuid: 9cc0f8f1-6a77-42d1-ae49-40cf08838f31
+uuid: c9e63fc6-547a-4757-9556-cf36148e65c7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_filmography
-    - node.type.person
+    - field.storage.node.field_description
+    - node.type.documentation
   module:
     - geocoder_field
     - text
@@ -19,12 +19,12 @@ third_party_settings:
       handling: preserve
       status_message: true
       log: true
-id: node.person.field_filmography
-field_name: field_filmography
+id: node.documentation.field_description
+field_name: field_description
 entity_type: node
-bundle: person
-label: Filmography
-description: Filmography
+bundle: documentation
+label: Description
+description: ''
 required: false
 translatable: false
 default_value: {  }
