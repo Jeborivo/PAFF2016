@@ -6,13 +6,13 @@ dependencies:
     - field.field.node.film.body
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
+    - field.field.node.film.field_content_reference
     - field.field.node.film.field_country
     - field.field.node.film.field_date_and_time
     - field.field.node.film.field_director
     - field.field.node.film.field_duration
     - field.field.node.film.field_editing
     - field.field.node.film.field_festivals
-    - field.field.node.film.field_mesto
     - field.field.node.film.field_music
     - field.field.node.film.field_producer
     - field.field.node.film.field_production
@@ -34,33 +34,40 @@ bundle: film
 mode: default
 content:
   body:
-    weight: 103
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_cast:
-    weight: 111
+    weight: 11
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_contact:
-    weight: 120
+    weight: 20
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+  field_content_reference:
+    weight: 19
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_country:
-    weight: 112
+    weight: 12
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_date_and_time:
-    weight: 102
+    weight: 2
     label: above
     settings:
       format_type: medium
@@ -68,109 +75,102 @@ content:
     third_party_settings: {  }
     type: datetime_default
   field_director:
-    weight: 104
+    weight: 4
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_duration:
-    weight: 116
+    weight: 16
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_editing:
-    weight: 107
+    weight: 7
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_festivals:
-    weight: 113
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  field_mesto:
-    weight: 119
+    weight: 13
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_music:
-    weight: 109
+    weight: 9
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_producer:
-    weight: 105
+    weight: 5
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_production:
-    weight: 118
+    weight: 18
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_screening:
-    weight: 115
+    weight: 15
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_screenplay:
-    weight: 106
+    weight: 6
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_set_design:
-    weight: 110
+    weight: 10
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_shooting:
-    weight: 114
+    weight: 14
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_sound:
-    weight: 108
+    weight: 8
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_title_original:
-    weight: 101
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_year:
-    weight: 117
+    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
   links:
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden: {  }

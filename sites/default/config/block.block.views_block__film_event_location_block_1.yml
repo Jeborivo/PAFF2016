@@ -1,0 +1,32 @@
+uuid: 473cd2ef-8b77-4fb8-b8c4-41318d2f4605
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.film_event_location
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__film_event_location_block_1
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'views_block:film_event_location-block_1'
+settings:
+  id: 'views_block:film_event_location-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      location: location
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

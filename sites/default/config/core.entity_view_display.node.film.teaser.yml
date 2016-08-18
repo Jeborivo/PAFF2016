@@ -7,13 +7,13 @@ dependencies:
     - field.field.node.film.body
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
+    - field.field.node.film.field_content_reference
     - field.field.node.film.field_country
     - field.field.node.film.field_date_and_time
     - field.field.node.film.field_director
     - field.field.node.film.field_duration
     - field.field.node.film.field_editing
     - field.field.node.film.field_festivals
-    - field.field.node.film.field_mesto
     - field.field.node.film.field_music
     - field.field.node.film.field_producer
     - field.field.node.film.field_production
@@ -38,13 +38,13 @@ hidden:
   body: true
   field_cast: true
   field_contact: true
+  field_content_reference: true
   field_country: true
   field_date_and_time: true
   field_director: true
   field_duration: true
   field_editing: true
   field_festivals: true
-  field_mesto: true
   field_music: true
   field_producer: true
   field_production: true
