@@ -1,0 +1,116 @@
+uuid: 995f4eeb-7068-4cc0-b2be-50f3230df53b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+name: location
+label: Location
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  node_type:
+    id: node_type
+    bundles:
+      location: location
+    negate: 0
+    uuid: 6ff4c16b-56fa-4a28-9757-8e3e1ab51279
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    blocks:
+      6ec1dfca-4dc3-4551-8ae8-2ba2bb47b8f7:
+        id: 'views_block:film_event_location-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: sidebar_first
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 6ec1dfca-4dc3-4551-8ae8-2ba2bb47b8f7
+      cae8288f-7593-42b3-8039-b3d00d1a6fee:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        context_mapping: {  }
+        region: primary_menu
+        theme: bartik
+        unique: 0
+        uuid: cae8288f-7593-42b3-8039-b3d00d1a6fee
+      59890650-a547-4a2a-a5dc-365bc55a7ce4:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: visible
+        context_mapping: {  }
+        region: breadcrumb
+        theme: bartik
+        unique: 0
+        uuid: 59890650-a547-4a2a-a5dc-365bc55a7ce4
+      7d4cf633-a9b3-4880-8c03-5d7528243c63:
+        id: help_block
+        label: Help
+        provider: help
+        label_display: visible
+        context_mapping: {  }
+        region: content
+        theme: bartik
+        unique: 0
+        uuid: 7d4cf633-a9b3-4880-8c03-5d7528243c63
+      ee0c90f2-0925-4441-9c54-28ed18adb3a1:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        context_mapping: {  }
+        region: content
+        theme: bartik
+        unique: 0
+        uuid: ee0c90f2-0925-4441-9c54-28ed18adb3a1
+      2ab8d320-01fc-488b-a62b-f089fbb74505:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        context_mapping: {  }
+        region: content
+        theme: bartik
+        unique: 0
+        uuid: 2ab8d320-01fc-488b-a62b-f089fbb74505
+      75a2a6d5-5d22-4c31-adbb-8db71041cf3d:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        provider: core
+        label_display: 0
+        context_mapping: {  }
+        region: content
+        theme: bartik
+        unique: 0
+        uuid: 75a2a6d5-5d22-4c31-adbb-8db71041cf3d
+      7c2075b8-22a8-477b-93b7-3695736fd7c9:
+        id: 'views_block:film_event_location-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: sidebar_first
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 7c2075b8-22a8-477b-93b7-3695736fd7c9
+    id: blocks
+    saved: false
+    uuid: c89b7dd6-3592-4ff6-917d-65032a4446c0
+weight: 0

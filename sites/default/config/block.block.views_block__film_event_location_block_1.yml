@@ -1,6 +1,6 @@
-uuid: 473cd2ef-8b77-4fb8-b8c4-41318d2f4605
+uuid: 41fe62cb-e4aa-496b-8428-54c732231b56
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.film_event_location
@@ -11,7 +11,7 @@ dependencies:
     - bartik
 id: views_block__film_event_location_block_1
 theme: bartik
-region: sidebar_first
+region: '-1'
 weight: -8
 provider: null
 plugin: 'views_block:film_event_location-block_1'

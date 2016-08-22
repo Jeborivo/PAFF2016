@@ -1,0 +1,310 @@
+uuid: 52f625ae-a780-4260-9733-7ef29dd7ada2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: site_wide
+label: Site-wide
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/admin/*"
+    negate: 1
+    uuid: 0e54c0d7-c117-401f-b0a5-2e8f2a8aa385
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      4e4b4d12-9485-4acf-bf39-78e1afa74c37:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 4e4b4d12-9485-4acf-bf39-78e1afa74c37
+      835d3777-3997-49b9-8528-dca30adb0764:
+        id: 'system_menu_block:account'
+        label: 'User account menu'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: secondary_menu
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 835d3777-3997-49b9-8528-dca30adb0764
+      92178098-39ff-4ca3-82a9-abf986d47dec:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: visible
+        region: breadcrumb
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 92178098-39ff-4ca3-82a9-abf986d47dec
+      131ef181-4f1e-47d2-8e1d-4a89473c1542:
+        id: help_block
+        label: Help
+        provider: help
+        label_display: visible
+        region: content
+        weight: '-5'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 131ef181-4f1e-47d2-8e1d-4a89473c1542
+      960626ae-ce6f-49b4-ba39-d0bd77951a11:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '-4'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 960626ae-ce6f-49b4-ba39-d0bd77951a11
+      055d0cdb-80cb-432c-a6fa-738cfca75101:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 055d0cdb-80cb-432c-a6fa-738cfca75101
+      c3b24170-fe5b-4d5d-93ca-f0ef0728fa14:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 1
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: c3b24170-fe5b-4d5d-93ca-f0ef0728fa14
+      781ec2e0-80ce-45b5-ada9-6875abbee16a:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 781ec2e0-80ce-45b5-ada9-6875abbee16a
+      9f9eb3d1-163c-4348-bd93-f51ad1f496b9:
+        id: search_form_block
+        label: 'Search form'
+        provider: search
+        label_display: visible
+        region: sidebar_first
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 9f9eb3d1-163c-4348-bd93-f51ad1f496b9
+      3cf238a9-fae9-4e71-94e7-57b4e7592bea:
+        id: 'system_menu_block:tools'
+        label: Tools
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: sidebar_first
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 3cf238a9-fae9-4e71-94e7-57b4e7592bea
+      b20fef5f-bc46-4389-8fe5-bae34ea65faf:
+        id: system_powered_by_block
+        label: 'Powered by Drupal'
+        provider: system
+        label_display: 0
+        region: footer_fifth
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: b20fef5f-bc46-4389-8fe5-bae34ea65faf
+      e82ebb54-4c0b-4b97-8b80-d8fc53c0f771:
+        id: 'system_menu_block:footer'
+        label: Footer
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: footer_fifth
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: e82ebb54-4c0b-4b97-8b80-d8fc53c0f771
+      6a94c42a-114b-4f51-a7b5-6313accc2bc3:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: navigation_collapsible
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 6a94c42a-114b-4f51-a7b5-6313accc2bc3
+      74e9107a-40cc-4720-abea-bf761ab53045:
+        id: 'system_menu_block:account'
+        label: 'User account menu'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: navigation_collapsible
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 74e9107a-40cc-4720-abea-bf761ab53045
+      2a7d580b-465b-473f-a40c-664ef5fae7ab:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: visible
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 2a7d580b-465b-473f-a40c-664ef5fae7ab
+      d9a5557e-686e-466f-a038-3134aa73143d:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: d9a5557e-686e-466f-a038-3134aa73143d
+      29953ed7-65c9-444f-a466-0c788409e83b:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 1
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 29953ed7-65c9-444f-a466-0c788409e83b
+      780ec6b2-8506-4f1c-9393-51e201586569:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 780ec6b2-8506-4f1c-9393-51e201586569
+      3ef3abc9-cecd-477f-b9d7-826a9d6b6ed3:
+        id: help_block
+        label: Help
+        provider: help
+        label_display: visible
+        region: help
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 3ef3abc9-cecd-477f-b9d7-826a9d6b6ed3
+      c32b0f3c-80ef-405c-bcde-0744bb3190ed:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: c32b0f3c-80ef-405c-bcde-0744bb3190ed
+      65d4332e-d211-4800-8918-c7b9c25e28ba:
+        id: search_form_block
+        label: 'Search form'
+        provider: search
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 65d4332e-d211-4800-8918-c7b9c25e28ba
+      43685942-95ba-4358-b8f8-30e1f6bdd9e5:
+        id: 'system_menu_block:tools'
+        label: Tools
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 43685942-95ba-4358-b8f8-30e1f6bdd9e5
+      03bb558e-1703-4c4f-a551-ab6899bedabc:
+        id: system_powered_by_block
+        label: 'Powered by Drupal'
+        provider: system
+        label_display: 0
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 03bb558e-1703-4c4f-a551-ab6899bedabc
+      216393c4-6db2-4b1c-99c8-4a732eaf23d8:
+        id: 'system_menu_block:footer'
+        label: Footer
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 216393c4-6db2-4b1c-99c8-4a732eaf23d8
+    id: blocks
+    saved: false
+    uuid: 3021072c-faca-4b66-bf82-c20635e2bacb
+weight: 0
