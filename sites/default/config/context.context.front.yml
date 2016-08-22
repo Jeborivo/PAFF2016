@@ -1,0 +1,251 @@
+uuid: e34e196d-4d91-46ac-b36f-eb37230f28da
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: front
+label: Front
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: 0
+    uuid: c6d81059-7c8c-43f9-8e42-e2aae6d9e4a9
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      0b8a1263-34eb-48c4-9984-6ea74d4b100a:
+        id: 'views_block:news-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 0b8a1263-34eb-48c4-9984-6ea74d4b100a
+      e76aee0d-7fe6-444c-9fbb-a4695a964a10:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: primary_menu
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: e76aee0d-7fe6-444c-9fbb-a4695a964a10
+      adb54ded-573c-46b6-a79e-29589a6d694a:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: visible
+        region: breadcrumb
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: adb54ded-573c-46b6-a79e-29589a6d694a
+      f39d7817-a2dd-44cd-9f75-6b7eed9d2c6d:
+        id: help_block
+        label: Help
+        provider: help
+        label_display: visible
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: f39d7817-a2dd-44cd-9f75-6b7eed9d2c6d
+      15aba4b2-1f37-4168-aaf8-2668fddeefee:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 15aba4b2-1f37-4168-aaf8-2668fddeefee
+      671dda52-df55-4e45-80ed-fe0fa4aeaa2e:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 671dda52-df55-4e45-80ed-fe0fa4aeaa2e
+      b2f7787f-b864-4088-9055-f7281fb86b76:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: b2f7787f-b864-4088-9055-f7281fb86b76
+      d01a7049-39ce-4274-b5cf-bdd00824af5e:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 1
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: d01a7049-39ce-4274-b5cf-bdd00824af5e
+      3b60e387-94f1-4923-91f0-b336dcca8bdc:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: navigation_collapsible
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 3b60e387-94f1-4923-91f0-b336dcca8bdc
+      aa9397fd-ae40-4e83-951a-25d20ffa0e92:
+        id: 'system_menu_block:account'
+        label: 'User account menu'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: navigation_collapsible
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: aa9397fd-ae40-4e83-951a-25d20ffa0e92
+      4d03284f-7da3-47f3-9075-893b0f31cd0d:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 4d03284f-7da3-47f3-9075-893b0f31cd0d
+      c0216d24-ec5e-4a75-8230-cb57e75bf293:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: c0216d24-ec5e-4a75-8230-cb57e75bf293
+      41146868-5f4e-4c53-bbe6-a35daff1678a:
+        id: help_block
+        label: Help
+        provider: help
+        label_display: visible
+        region: help
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 41146868-5f4e-4c53-bbe6-a35daff1678a
+      78cfd8ef-5f2e-4328-82e2-83c44b888988:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        region: content
+        weight: '-6'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 78cfd8ef-5f2e-4328-82e2-83c44b888988
+      2e8c0af9-a21c-4909-8d2e-0efa660ce381:
+        id: search_form_block
+        label: 'Search form'
+        provider: search
+        label_display: visible
+        region: sidebar_second
+        weight: '-9'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 2e8c0af9-a21c-4909-8d2e-0efa660ce381
+      35f84842-9211-4a23-ab51-51a02f5811d2:
+        id: 'system_menu_block:tools'
+        label: Tools
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: sidebar_second
+        weight: '-8'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 35f84842-9211-4a23-ab51-51a02f5811d2
+      ff62413b-e362-4710-8fd3-8fc260a7cbe1:
+        id: system_powered_by_block
+        label: 'Powered by Drupal'
+        provider: system
+        label_display: 0
+        region: footer
+        weight: '-6'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: ff62413b-e362-4710-8fd3-8fc260a7cbe1
+      ae539d6f-3eb8-4bfb-8fc7-0c03976817ca:
+        id: 'system_menu_block:footer'
+        label: Footer
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: footer
+        weight: '-5'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: ae539d6f-3eb8-4bfb-8fc7-0c03976817ca
+      b2afee2c-a1fe-4f32-94e1-bb1898bec40e:
+        id: 'views_block:news-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-5'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: b2afee2c-a1fe-4f32-94e1-bb1898bec40e
+    id: blocks
+    saved: false
+    uuid: 509e07cd-5f50-4153-bac4-2a38458b4dd5
+weight: 0

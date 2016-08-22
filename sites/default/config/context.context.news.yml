@@ -1,0 +1,120 @@
+uuid: 6319ab34-0384-4de6-884d-fcdbd07cae30
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: news
+label: News
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: /news
+    negate: 0
+    uuid: df83e76f-d0bb-49ab-90a4-72eaa0c20913
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      7de3363f-c5df-4a85-b8b0-68627c373c98:
+        id: 'views_block:news-block_2'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 7de3363f-c5df-4a85-b8b0-68627c373c98
+      690bfe7c-473e-42a9-8f53-9b2cca7a0215:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: primary_menu
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 690bfe7c-473e-42a9-8f53-9b2cca7a0215
+      dc5c027e-ca0c-4f86-95d4-13de0dbe3f65:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: visible
+        region: breadcrumb
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: dc5c027e-ca0c-4f86-95d4-13de0dbe3f65
+      7f64b8af-8d8a-4c41-97f0-5f6af533fed2:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 7f64b8af-8d8a-4c41-97f0-5f6af533fed2
+      2c0cd3f8-b6c0-4849-a21f-4c3a5b9b430a:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: 2c0cd3f8-b6c0-4849-a21f-4c3a5b9b430a
+      c5346eb3-43a7-4020-add1-36413a75106a:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: c5346eb3-43a7-4020-add1-36413a75106a
+      3112da1e-590e-43ad-9a73-1c8db8b59aed:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 3112da1e-590e-43ad-9a73-1c8db8b59aed
+      391376d6-c0eb-47e6-910b-f929bc03f0f2:
+        id: 'views_block:news-block_2'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: bootstrap
+        unique: 0
+        uuid: 391376d6-c0eb-47e6-910b-f929bc03f0f2
+    id: blocks
+    saved: false
+    uuid: 3c1f264e-5952-41ba-8a26-7a08859f8292
+weight: 0

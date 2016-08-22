@@ -1,17 +1,18 @@
 uuid: 19bbac02-076c-4ab5-8c58-3af1b097cbe9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.news
   module:
+    - system
     - views
   theme:
     - bartik
 id: views_block__news_block_1
 theme: bartik
-region: sidebar_first
-weight: -8
+region: '-1'
+weight: -7
 provider: null
 plugin: 'views_block:news-block_1'
 settings:
@@ -21,4 +22,9 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /news
+    negate: true
+    context_mapping: {  }
