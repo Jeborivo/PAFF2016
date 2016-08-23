@@ -1,0 +1,22 @@
+uuid: fec4fb9e-0692-4211-bdde-ef27849a95f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - PAFF
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: PAFF_help
+theme: PAFF
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

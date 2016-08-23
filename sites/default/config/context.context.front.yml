@@ -245,6 +245,54 @@ reactions:
         theme: bootstrap
         unique: 0
         uuid: b2afee2c-a1fe-4f32-94e1-bb1898bec40e
+      e74a23c4-2024-4a10-9059-380ee9f02a7e:
+        id: 'views_block:news-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: e74a23c4-2024-4a10-9059-380ee9f02a7e
+      c83a1e8f-e1bf-4edf-94aa-dcd757f78b23:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: navigation_collapsible
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: c83a1e8f-e1bf-4edf-94aa-dcd757f78b23
+      bae14c26-312a-47e7-86fc-421ba319a3d4:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: bae14c26-312a-47e7-86fc-421ba319a3d4
+      59deadab-1901-44f9-baae-dea268d97b6d:
+        id: search_form_block
+        label: 'Search form'
+        provider: search
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 59deadab-1901-44f9-baae-dea268d97b6d
     id: blocks
     saved: false
     uuid: 509e07cd-5f50-4153-bac4-2a38458b4dd5

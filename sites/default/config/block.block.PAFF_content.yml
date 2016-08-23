@@ -1,0 +1,22 @@
+uuid: 03ab35dc-1219-41a6-a419-798ce487d3b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - PAFF
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: PAFF_content
+theme: PAFF
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -14,7 +14,6 @@ third_party_settings:
     field: field_address
     plugins:
       - googlemaps
-      - bingmaps
     dumper: wkt
     delta_handling: default
     failure:

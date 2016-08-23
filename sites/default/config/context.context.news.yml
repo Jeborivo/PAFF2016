@@ -114,6 +114,19 @@ reactions:
         theme: bootstrap
         unique: 0
         uuid: 391376d6-c0eb-47e6-910b-f929bc03f0f2
+      0faff92b-52b4-49b0-b95f-09187f98055e:
+        id: 'views_block:news-block_2'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 0faff92b-52b4-49b0-b95f-09187f98055e
     id: blocks
     saved: false
     uuid: 3c1f264e-5952-41ba-8a26-7a08859f8292

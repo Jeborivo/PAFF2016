@@ -110,6 +110,19 @@ reactions:
         theme: bootstrap
         unique: 0
         uuid: 7c2075b8-22a8-477b-93b7-3695736fd7c9
+      b282a81e-fd2f-4d61-a59f-12f83250a99b:
+        id: 'views_block:film_event_location-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: b282a81e-fd2f-4d61-a59f-12f83250a99b
     id: blocks
     saved: false
     uuid: c89b7dd6-3592-4ff6-917d-65032a4446c0

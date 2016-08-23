@@ -304,6 +304,102 @@ reactions:
         theme: bootstrap
         unique: 0
         uuid: 216393c4-6db2-4b1c-99c8-4a732eaf23d8
+      97ce2de9-8cbc-43ea-95c1-47f0ae1c7560:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: navigation_collapsible
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 97ce2de9-8cbc-43ea-95c1-47f0ae1c7560
+      38fe41ba-c579-4012-952e-1e2bf3f46b71:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 38fe41ba-c579-4012-952e-1e2bf3f46b71
+      5c807e6c-fc06-438b-a45e-6f0230db8d88:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 1
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 5c807e6c-fc06-438b-a45e-6f0230db8d88
+      7dc668d8-27f4-4fea-89a3-85d4ca682094:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: visible
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 7dc668d8-27f4-4fea-89a3-85d4ca682094
+      cfa4367c-a958-437c-89f2-c3c49babbb36:
+        id: search_form_block
+        label: 'Search form'
+        provider: search
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: cfa4367c-a958-437c-89f2-c3c49babbb36
+      aa730a22-aabd-4c76-bf0a-ce28ca557817:
+        id: 'system_menu_block:tools'
+        label: Tools
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: aa730a22-aabd-4c76-bf0a-ce28ca557817
+      6bb9e93e-5206-446e-a694-c4cce8a274fa:
+        id: system_powered_by_block
+        label: 'Powered by Drupal'
+        provider: system
+        label_display: 0
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 6bb9e93e-5206-446e-a694-c4cce8a274fa
+      c41e761d-b2a9-4c5d-9897-dbc8e1aa38f9:
+        id: 'system_menu_block:footer'
+        label: Footer
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: c41e761d-b2a9-4c5d-9897-dbc8e1aa38f9
     id: blocks
     saved: false
     uuid: 3021072c-faca-4b66-bf82-c20635e2bacb

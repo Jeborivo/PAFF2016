@@ -1,0 +1,22 @@
+uuid: 132299d8-ac42-4588-9cf0-8401eff96c2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - PAFF
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: PAFF_powered
+theme: PAFF
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
