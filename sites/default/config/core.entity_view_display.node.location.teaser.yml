@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.location.field_address
+    - field.field.node.location.field_geofield
+    - field.field.node.location.field_image
+    - field.field.node.location.field_long_text
     - node.type.location
   module:
     - user

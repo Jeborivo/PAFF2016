@@ -312,7 +312,7 @@ reactions:
         level: '1'
         depth: '0'
         region: navigation_collapsible
-        weight: '0'
+        weight: '-3'
         context_mapping: {  }
         theme: PAFF
         unique: 0
