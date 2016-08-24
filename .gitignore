@@ -45,3 +45,4 @@ core/phpunit.xml
 
 # Ignore dev env
 .idea
+.DS_Store
