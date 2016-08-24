@@ -1,0 +1,22 @@
+{
+  "name": "cwf",
+  "version": "1.0.0",
+  "description": "<!-- @file Instructions for subtheming using the LESS Starterkit. --> <!-- @defgroup sub_theming_less --> <!-- @ingroup sub_theming --> # LESS Starterkit",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-grunticon": "^2.2.3",
+    "grunt-notify": "^0.4.5",
+    "grunt-postcss": "^0.8.0",
+    "load-grunt-tasks": "^3.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
