@@ -1,17 +1,20 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://localhost/PAFF2016/themes/Bootstrap/favicon.ico'
+  url: 'http://localhost/PAFF2016/themes/PAFF/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  PAFF: 8000
+logo:
+  path: 'public://Screenshot from 2016-08-22 11:37:11.png'
+  url: ''
+  use_default: false
+table_responsive: '-1'
+table: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: true
-schemas:
-  bootstrap: 8000
-  PAFF: 8000
+cdn_provider: ''

@@ -77,8 +77,9 @@
     'clearfix',
   ]
 %}
+
 <article{{ attributes.addClass(classes) }}>
 
-    <a href="{{ node.field_link.0.url }}"><img src="{{ file_url(node.field_image.entity.uri.value) }}"></a>
+<a href="{{ node.field_link.0.url }}"><img src="{{ content.field_image|e|striptags|trim}}"></a>
 
 </article>

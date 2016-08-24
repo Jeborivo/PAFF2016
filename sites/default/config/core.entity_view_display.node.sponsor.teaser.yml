@@ -5,15 +5,39 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.sponsor.field_image
+    - field.field.node.sponsor.field_link
     - node.type.sponsor
   module:
+    - image_url_formatter
+    - link
     - user
 id: node.sponsor.teaser
 targetEntityType: node
 bundle: sponsor
 mode: teaser
 content:
+  field_image:
+    type: image_url
+    weight: 1
+    label: hidden
+    settings:
+      url_type: '0'
+      image_style: sponsors
+      image_link: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_separate
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      rel: ''
+      target: ''
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
   links:
-    weight: 100
-hidden:
-  field_image: true
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

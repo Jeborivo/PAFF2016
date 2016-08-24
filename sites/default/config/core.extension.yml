@@ -30,6 +30,7 @@ module:
   help: 0
   history: 0
   image: 0
+  image_url_formatter: 0
   leaflet: 0
   leaflet_views: 0
   link: 0

@@ -1,4 +1,4 @@
-uuid: 5c28dd74-21ba-4e50-9885-b7126d200f35
+uuid: 53da5c43-9873-4ac1-afbf-44b8641ae4a2
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ field_name: field_image
 entity_type: node
 bundle: sponsor
 label: Image
-description: Image
-required: true
+description: ''
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -24,12 +24,12 @@ settings:
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: true
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:
     uuid: ''
-    alt: Image
+    alt: ''
     title: ''
     width: null
     height: null

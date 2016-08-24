@@ -1,0 +1,15 @@
+uuid: 58d238fb-529f-4018-b24e-c773ff8f04f9
+langcode: en
+status: true
+dependencies: {  }
+name: sponsors
+label: Sponsors
+effects:
+  e3c90793-eb6a-4e22-b4a9-512cbf3e3e7a:
+    uuid: e3c90793-eb6a-4e22-b4a9-512cbf3e3e7a
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      upscale: false

@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_link
     - node.type.sponsor
   module:
-    - image
+    - image_url_formatter
     - link
     - user
 id: node.sponsor.default
@@ -16,13 +16,14 @@ bundle: sponsor
 mode: default
 content:
   field_image:
-    weight: 101
-    label: above
+    weight: 103
+    label: hidden
     settings:
-      image_style: ''
+      url_type: '0'
+      image_style: sponsors
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: image_url
   field_link:
     weight: 102
     label: above
