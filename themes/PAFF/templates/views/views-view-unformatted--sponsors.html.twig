@@ -17,17 +17,21 @@
  * @ingroup themeable
  */
 #}
-hej?
+
+
 {% if title %}
-  <h3>{{ title }}</h3>
+    <h3>{{ title }}</h3>
 {% endif %}
+
+<div class="sponsors-slideshow">
 {% for row in rows %}
-  {%
+    {%
     set row_classes = [
-      default_row_class ? 'views-row',
+    default_row_class ? 'views-row',
     ]
-  %}
-  <div{{ row.attributes.addClass(row_classes) }}>
-    {{ row.content }}
-  </div>
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+        {{ row.content }}
+    </div>
 {% endfor %}
+</div>

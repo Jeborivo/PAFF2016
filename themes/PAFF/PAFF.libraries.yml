@@ -18,3 +18,24 @@ bootstrap-scripts:
     js/scrollspy.js: {}
     js/tab.js: {}
     js/transition.js: {}
+
+slick:
+    version: 1.x
+    js:
+      js/slick.min.js: {}
+    dependencies:
+      - core/jquery
+
+
+paff:
+  version: 1.x
+  header: true
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+

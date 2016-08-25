@@ -22,3 +22,5 @@ regions:
 libraries:
   - 'PAFF/global-styling'
   - 'PAFF/bootstrap-scripts'
+  - 'PAFF/slick'
+  - 'PAFF/paff'
