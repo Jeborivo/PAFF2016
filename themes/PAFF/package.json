@@ -9,7 +9,6 @@
     "grunt": "^1.0.1",
     "grunt-contrib-less": "^1.3.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-grunticon": "^2.2.3",
     "grunt-notify": "^0.4.5",
     "grunt-postcss": "^0.8.0",
     "load-grunt-tasks": "^3.5.0"

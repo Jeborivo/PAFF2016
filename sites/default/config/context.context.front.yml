@@ -276,8 +276,8 @@ reactions:
         label: 'Search form'
         provider: search
         label_display: visible
-        region: sidebar_second
-        weight: '-9'
+        region: navigation
+        weight: '-1'
         context_mapping: {  }
         theme: PAFF
         unique: 0
@@ -291,7 +291,7 @@ reactions:
         info: ''
         view_mode: full
         region: sidebar_second
-        weight: '0'
+        weight: '-9'
         context_mapping: {  }
         theme: PAFF
         unique: 0

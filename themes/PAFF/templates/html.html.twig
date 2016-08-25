@@ -44,6 +44,7 @@
  * @see template_process()
  */
 #}
+
 {%
   set body_classes = [
     logged_in ? 'user-logged-in',
@@ -58,7 +59,7 @@
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700,900' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/14ea18a744.js"></script>
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>

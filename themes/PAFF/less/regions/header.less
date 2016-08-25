@@ -1,0 +1,28 @@
+.navbar{
+  background-color: @brand-primary;
+  font-weight: @headings-font-weight;
+  color: @text-color;
+  font-size:24px;
+
+  .navbar-header{
+    width:100%;
+  }
+  @media (min-width: @screen-md){
+    .navbar-nav li{
+      &:first-child a{
+        padding-left: 0;
+      }
+      + li{
+         margin-left:10px;
+       }
+    }
+    .block-search{
+      float:right;
+      margin-top: 8px;
+      width:320px;
+      .form-item{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

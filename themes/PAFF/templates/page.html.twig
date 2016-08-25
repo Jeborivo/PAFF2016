@@ -56,6 +56,12 @@
  * @see html.html.twig
  */
 #}
+<div >
+    <div>
+      <a href="{{ url('view.frontpage.page_1')  }}"><img src="{{ base_path ~ directory }}/logo.png" alt="My Logo"/></a>
+    </div>
+</div>
+
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
@@ -64,11 +70,12 @@
       set navbar_classes = [
         'navbar',
         theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
-        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-      <div class="navbar-header">
+    <div class="container">
+      <div class="navbar-header ">
+
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
@@ -87,6 +94,7 @@
           {{ page.navigation_collapsible }}
         </div>
       {% endif %}
+    </div>
     </header>
   {% endblock %}
 {% endif %}
@@ -94,8 +102,8 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
 
+    <div class="row">
       {# Header #}
       {% if page.header %}
         {% block header %}

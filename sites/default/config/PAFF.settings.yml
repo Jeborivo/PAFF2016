@@ -7,7 +7,7 @@ schemas:
   bootstrap: 8000
   PAFF: 8000
 logo:
-  path: 'public://Screenshot from 2016-08-22 11:37:11.png'
+  path: 'public://logo.png'
   url: ''
   use_default: false
 table_responsive: '-1'

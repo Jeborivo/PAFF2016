@@ -15,4 +15,4 @@ description: 'Film sa dodatnim podacima o njemu.'
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

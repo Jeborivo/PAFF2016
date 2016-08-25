@@ -5,3 +5,10 @@
  *
  * Place your custom PHP code in this file.
  */
+ function acton_preprocess_page(&$variables) {
+   $variables['logopath'] = '/' . drupal_get_path('theme','acton') . '/logo.png';
+ }
+ function PAFF_preprocess(&$variables, $hook)
+{
+    $variables['base_path'] = base_path();
+}
