@@ -22,8 +22,7 @@
 {% if title %}
     <h3>{{ title }}</h3>
 {% endif %}
-
-<div class="sponsors-slideshow">
+<div class="slider-slider-nav">
 {% for row in rows %}
     {%
     set row_classes = [
@@ -32,6 +31,8 @@
     %}
     <div{{ row.attributes.addClass(row_classes) }}>
         {{ row.content }}
+
     </div>
 {% endfor %}
+
 </div>
