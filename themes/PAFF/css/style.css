@@ -3350,7 +3350,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -5919,6 +5918,18 @@ button.close {
     display: none !important;
   }
 }
+.path-frontpage .region-header {
+  background-color: #6ea797;
+  margin-bottom: 35px;
+  border-bottom: 3px solid;
+  padding-bottom: 15px;
+}
+.path-frontpage .region-header .block-title {
+  display: none !important;
+}
+.path-frontpage .region-header .slick-margin {
+  margin-left: 25px;
+}
 .paff-logo {
   float: left !important;
 }
@@ -5979,6 +5990,10 @@ button.close {
 }
 .region-sidebar-second .block-title {
   text-align: center;
+}
+.region-sidebar-second .views-field-field-date-and-time {
+  text-align: center;
+  font-size: 20px;
 }
 .view-sponsors {
   text-align: center;

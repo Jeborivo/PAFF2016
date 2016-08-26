@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.slider
     - field.storage.node.field_image
-    - image.style.medium
+    - image.style.slider_nav
     - node.type.article
     - node.type.event
     - node.type.film
@@ -211,6 +211,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: container
     cache_metadata:
       max-age: -1
       contexts:
@@ -247,7 +248,10 @@ display:
       display_description: ''
       style:
         type: default
-        options: {  }
+        options:
+          grouping: {  }
+          row_class: slick-margin
+          default_row_class: true
       defaults:
         style: false
         row: false
@@ -374,7 +378,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
+            image_style: slider_nav
             image_link: ''
           group_column: ''
           group_columns: {  }
