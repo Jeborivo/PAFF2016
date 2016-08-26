@@ -5919,6 +5919,19 @@ button.close {
     display: none !important;
   }
 }
+.paff-logo {
+  float: left !important;
+}
+.input-group-btn {
+  display: none !important;
+}
+.in-block {
+  display: inline-block;
+  margin-left: 10px;
+}
+.in-block h2 {
+  color: #0d0d0d;
+}
 .navbar {
   background-color: #003727;
   font-weight: 900;
@@ -5930,7 +5943,7 @@ button.close {
 }
 @media (min-width: 992px) {
   .navbar .navbar-nav li:first-child a {
-    padding-left: 0;
+    padding-left: 15px;
   }
   .navbar .navbar-nav li + li {
     margin-left: 10px;
@@ -5940,9 +5953,32 @@ button.close {
     margin-top: 8px;
     width: 320px;
   }
+  .navbar .block-search .input-group {
+    width: 320px;
+  }
   .navbar .block-search .form-item {
     margin-bottom: 0;
   }
+}
+.block-views-blockdownload-block-1 {
+  margin-bottom: 50px;
+}
+.region-sidebar-second .block {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #6ea797;
+  color: white;
+}
+.region-sidebar-second .block h2,
+.region-sidebar-second .block a {
+  color: white;
+}
+.region-sidebar-second .block h2 {
+  margin-top: 0;
+}
+.region-sidebar-second .block-title {
+  text-align: center;
 }
 .view-sponsors {
   text-align: center;

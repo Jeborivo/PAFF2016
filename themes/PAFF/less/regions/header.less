@@ -1,3 +1,22 @@
+.paff-logo{
+  .pull-left;
+}
+.input-group-btn{
+  .hide
+}
+.in-block{
+  display:inline-block;
+  margin-left: 10px;
+  h2{
+    color:#0d0d0d;
+  }
+
+}
+
+
+
+
+
 .navbar{
   background-color: @brand-primary;
   font-weight: @headings-font-weight;
@@ -10,16 +29,19 @@
   @media (min-width: @screen-md){
     .navbar-nav li{
       &:first-child a{
-        padding-left: 0;
+        padding-left: 15px;
       }
       + li{
          margin-left:10px;
        }
     }
-    .block-search{
+    .block-search {
       float:right;
       margin-top: 8px;
       width:320px;
+       .input-group{
+         width:320px;
+       }
       .form-item{
         margin-bottom: 0;
       }
