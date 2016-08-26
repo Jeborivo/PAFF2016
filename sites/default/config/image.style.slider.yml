@@ -1,0 +1,15 @@
+uuid: b55bad02-a525-4e3c-9353-9e896c6e2438
+langcode: en
+status: true
+dependencies: {  }
+name: slider
+label: Slider
+effects:
+  55b8e854-74fe-428a-9caf-240e45b3285c:
+    uuid: 55b8e854-74fe-428a-9caf-240e45b3285c
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 550
+      upscale: false

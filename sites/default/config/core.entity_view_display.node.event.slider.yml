@@ -1,0 +1,64 @@
+uuid: 7376b1e8-9924-4977-a81d-d9f391033787
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.slider
+    - field.field.node.event.field_content_reference
+    - field.field.node.event.field_date_and_time
+    - field.field.node.event.field_en
+    - field.field.node.event.field_image
+    - field.field.node.event.field_long_text
+    - image.style.slider
+    - node.type.event
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.event.slider
+targetEntityType: node
+bundle: event
+mode: slider
+content:
+  field_content_reference:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_date_and_time:
+    type: datetime_plain
+    weight: 5
+    label: above
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+  field_en:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: slider
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_long_text:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

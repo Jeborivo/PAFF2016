@@ -11,7 +11,7 @@ dependencies:
 id: dates
 theme: PAFF
 region: '-1'
-weight: null
+weight: -7
 provider: null
 plugin: 'block_content:3985bbb4-38e9-490a-80df-779865888274'
 settings:

@@ -4,16 +4,26 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.documentation.field_description
+    - field.field.node.documentation.field_file
     - node.type.documentation
   module:
+    - file
     - user
 id: node.documentation.teaser
 targetEntityType: node
 bundle: documentation
 mode: teaser
 content:
+  field_file:
+    type: file_default
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_description: true
-  field_file: true

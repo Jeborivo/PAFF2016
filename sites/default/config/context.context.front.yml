@@ -253,7 +253,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-10'
         context_mapping: {  }
         theme: PAFF
         unique: 0
@@ -291,24 +291,11 @@ reactions:
         info: ''
         view_mode: full
         region: sidebar_second
-        weight: '-9'
+        weight: '-2'
         context_mapping: {  }
         theme: PAFF
         unique: 0
         uuid: 73f1db9f-b339-421b-bec6-5f76d95e5874
-      791de54d-1871-4815-be88-f410ddacd483:
-        id: 'views_block:slider-block_1'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: header
-        weight: '0'
-        context_mapping: {  }
-        theme: PAFF
-        unique: 0
-        uuid: 791de54d-1871-4815-be88-f410ddacd483
       f97e8808-8004-4b8b-a9da-60c36d0a06cf:
         id: 'views_block:sponsors-block_1'
         label: ''
@@ -322,6 +309,46 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: f97e8808-8004-4b8b-a9da-60c36d0a06cf
+      c318e692-90b0-4ce1-9375-e0d5d85e1f08:
+        id: 'block_content:5f09f600-fb27-44e9-8f49-bf3197da3f36'
+        label: 'Download schedule'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: sidebar_second
+        weight: '-3'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: c318e692-90b0-4ce1-9375-e0d5d85e1f08
+      fe774e6b-8df1-4ac9-9b05-b0a630e4dc95:
+        id: 'views_block:slider-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: header
+        weight: '-3'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: fe774e6b-8df1-4ac9-9b05-b0a630e4dc95
+      b25d2b13-b49b-46f7-93dc-dbe09601435f:
+        id: 'views_block:slider-block_2'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: header
+        weight: '-2'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: b25d2b13-b49b-46f7-93dc-dbe09601435f
     id: blocks
     saved: false
     uuid: 509e07cd-5f50-4153-bac4-2a38458b4dd5

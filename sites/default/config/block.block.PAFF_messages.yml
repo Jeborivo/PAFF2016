@@ -11,7 +11,7 @@ _core:
 id: PAFF_messages
 theme: PAFF
 region: header
-weight: -50
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:

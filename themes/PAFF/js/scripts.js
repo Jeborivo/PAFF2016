@@ -20,7 +20,7 @@
     Drupal.behaviors.slider = {
         attach: function(context, settings) {
 
-           $('.slider-slider-for').slick({
+           $('.slider-slider-for').slick({ 
             slidesToShow: 1,
             slidesToScroll: 0,
             arrows: false,

@@ -11,7 +11,7 @@ _core:
 id: PAFF_search
 theme: PAFF
 region: sidebar_second
-weight: -1
+weight: -8
 provider: null
 plugin: search_form_block
 settings:

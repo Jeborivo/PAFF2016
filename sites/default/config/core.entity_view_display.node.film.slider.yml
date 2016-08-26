@@ -1,8 +1,9 @@
-uuid: ea734bb4-17b9-4045-be1c-88431a992de6
+uuid: ef5afcd5-b374-4708-933b-9ab22183dbdc
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.slider
     - field.field.node.film.body
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
@@ -24,16 +25,17 @@ dependencies:
     - field.field.node.film.field_sound
     - field.field.node.film.field_title_original
     - field.field.node.film.field_year
+    - image.style.slider
     - node.type.film
   module:
     - datetime
     - image
     - text
     - user
-id: node.film.default
+id: node.film.slider
 targetEntityType: node
 bundle: film
-mode: default
+mode: slider
 content:
   body:
     weight: 3
@@ -105,9 +107,9 @@ content:
     type: entity_reference_label
   field_image:
     weight: 21
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      image_style: slider
       image_link: ''
     third_party_settings: {  }
     type: image

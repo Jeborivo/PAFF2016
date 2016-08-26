@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.film.field_duration
     - field.field.node.film.field_editing
     - field.field.node.film.field_festivals
+    - field.field.node.film.field_image
     - field.field.node.film.field_music
     - field.field.node.film.field_producer
     - field.field.node.film.field_production
@@ -23,9 +24,11 @@ dependencies:
     - field.field.node.film.field_sound
     - field.field.node.film.field_title_original
     - field.field.node.film.field_year
+    - image.style.thumbnail
     - node.type.film
   module:
     - datetime
+    - image
     - path
     - text
 id: node.film.default
@@ -113,6 +116,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_music:
     weight: 14
     settings:
