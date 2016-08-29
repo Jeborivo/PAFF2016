@@ -5929,6 +5929,7 @@ button.close {
   margin-left: 25px;
 }
 .paff-logo {
+  margin-top: 20px;
   float: left !important;
   display: block;
   width: 100%;
@@ -5945,8 +5946,22 @@ button.close {
   display: inline-block;
   margin-left: 10px;
 }
-.in-block h2 {
-  color: #0d0d0d;
+.in-block i {
+  color: #969696;
+  font-size: 28px;
+}
+.date:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100px;
+  width: 1px;
+  border-right: 1px solid #969696;
+  padding-right: 20px;
+}
+.date {
+  color: black;
+  font-size: 36px;
 }
 .navbar {
   background-color: #003727;

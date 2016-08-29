@@ -56,7 +56,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 0
+          items_per_page: 500
           offset: 0
       style:
         type: default
