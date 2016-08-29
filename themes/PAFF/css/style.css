@@ -5932,6 +5932,13 @@ button.close {
 }
 .paff-logo {
   float: left !important;
+  display: block;
+  width: 100%;
+  max-width: 340px;
+}
+.paff-logo img {
+  max-width: 100%;
+  height: auto;
 }
 .input-group-btn {
   display: none !important;
