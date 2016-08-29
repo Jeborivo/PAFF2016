@@ -34,10 +34,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
-  links:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   comment: true
   field_tags: true
+  links: true

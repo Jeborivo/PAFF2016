@@ -53,9 +53,10 @@ content:
   field_long_text:
     weight: 4
     label: above
-    settings: {  }
+    settings:
+      trim_length: 500
     third_party_settings: {  }
-    type: text_default
+    type: text_trimmed
   links:
     weight: 0
     settings: {  }

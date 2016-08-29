@@ -5916,17 +5916,28 @@ button.close {
     display: none !important;
   }
 }
+.transparency {
+  background: rgba(255, 255, 255, 0.8);
+}
 .path-frontpage .region-header {
-  background-color: #6ea797;
-  margin-bottom: 35px;
   border-bottom: 3px solid;
   padding-bottom: 15px;
+}
+.path-frontpage .region-header .slick-track {
+  padding-top: 60px;
 }
 .path-frontpage .region-header .block-title {
   display: none !important;
 }
 .path-frontpage .region-header .slick-margin {
   margin-left: 25px;
+}
+.path-frontpage .background-img {
+  background-image: url('hero-transparent.jpg');
+  background-size: cover;
+}
+.path-frontpage .main-container {
+  margin-top: 35px;
 }
 .paff-logo {
   margin-top: 20px;
@@ -5964,10 +5975,14 @@ button.close {
   font-size: 36px;
 }
 .navbar {
+  height: 70px;
   background-color: #003727;
   font-weight: 900;
   color: #333333;
-  font-size: 24px;
+  font-size: 28px;
+}
+.navbar .container {
+  margin-top: 10px;
 }
 .navbar .navbar-header {
   width: 100%;

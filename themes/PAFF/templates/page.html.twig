@@ -56,6 +56,9 @@
  * @see html.html.twig
  */
 #}
+
+<div class="background-img clearfix">
+  <div class="transparency">
 <div class="container">
     <div class="paff-logo">
       <a href="{{ url('view.frontpage.page_1')  }}"><img src="{{ base_path ~ directory }}/logo.png" alt="My Logo"/></a>
@@ -72,6 +75,7 @@
     </div>
     </div><div class="clearfix"></div>
 </div>
+  </div>
 
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
@@ -84,6 +88,7 @@
       ]
     %}
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+
     <div class="container">
       <div class="navbar-header ">
 
@@ -118,8 +123,10 @@
     <div class="col-sm-12" role="heading">
       {{ page.header }}
     </div>
+
   {% endblock %}
 {% endif %}
+</div>
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
 
     <div class="row">

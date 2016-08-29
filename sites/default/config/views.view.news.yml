@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.slider
     - core.entity_view_mode.node.teaser
     - node.type.article
   module:
@@ -59,7 +60,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: slider
       fields:
         title:
           id: title
@@ -223,6 +224,11 @@ display:
         link_url: false
         pager: false
         title: false
+        style: false
+        row: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       link_url: ''
       pager:
         type: some
@@ -230,6 +236,17 @@ display:
           items_per_page: 5
           offset: null
       title: News
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: slider
+      use_more: false
+      use_more_always: true
+      use_more_text: More
     cache_metadata:
       max-age: -1
       contexts:
@@ -245,6 +262,25 @@ display:
     position: 3
     display_options:
       display_extenders: {  }
+      style:
+        type: default
+        options: {  }
+      defaults:
+        style: false
+        row: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        title: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: slider
+      use_more: false
+      use_more_always: true
+      use_more_text: More
+      title: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -262,19 +298,52 @@ display:
       display_extenders: {  }
       path: news
       pager:
-        type: some
+        type: full
         options:
           items_per_page: 10
           offset: 1
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       defaults:
         pager: false
         title: false
+        style: false
+        row: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       title: News
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      use_more: false
+      use_more_always: true
+      use_more_text: More
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

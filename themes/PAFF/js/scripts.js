@@ -20,9 +20,9 @@
     Drupal.behaviors.slider = {
         attach: function(context, settings) {
 
-           $('.slider-slider-for').slick({ 
+           $('.slider-slider-for').slick({
             slidesToShow: 1,
-            slidesToScroll: 0,
+            slidesToScroll: 1,
             arrows: false,
             fade: false,
             asNavFor: '.slider-slider-nav'
