@@ -77,13 +77,7 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if not page %}
-  <h2{{ title_attributes }}>
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-  </h2>
-  {% endif %}
-  {{ title_suffix }}
+
 
   {% if display_submitted %}
     <footer>
@@ -100,7 +94,13 @@
     {{content.field_image}}
   </div>
   <div class="col-md-6">
-    {{content.field_title}}
+    {{ title_prefix }}
+    {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+    {% endif %}
+    {{ title_suffix }}
     {{content.field_long_text}}
   </div>
   </div>

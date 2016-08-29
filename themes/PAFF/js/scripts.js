@@ -28,11 +28,10 @@
             asNavFor: '.slider-slider-nav'
           });-
           $('.slider-slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 2,
+            slidesToShow: 4,
+            slidesToScroll: 1,
             asNavFor: '.slider-slider-for',
             dots: false,
-            centerMode: true,
             focusOnSelect: true,
             infinite: true,
             prevArrow: false,
@@ -40,6 +39,7 @@
             swipe: true,
             slickPrev: false,
             slickNext: false,
+
 
           });
         }

@@ -96,7 +96,20 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
+     <div class="row">
+         <div class="pull-left news-margin">
+            {{content.field_image}}
+        </div>
+        <div>
+               {{content.field_long_text}}
+         </div>
+     </div>
+
+     <div class="row  news-margin">
+
+               {{content.field_filmography}}
+         </div>
+     </div>
   </div>
 
 </article>

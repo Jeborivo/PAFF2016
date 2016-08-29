@@ -76,7 +76,7 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-
+ 
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -95,41 +95,8 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
-      <div class="row">
-           <div class="row">
-               <div class="col-md-8">
-                  {{content.field_image}}
-               </div>
-               <div class="col-md-2">
-                  {{content.field_date_and_time}}
-               </div>
-               <div class="col-md-2">
-                  {{content.field_en}}
-               </div>
-           </div>
-
-           <div class="row">
-             <div class="col-md-4 pull-right">
-                {{content.field_content_reference}}
-             </div>
-           </div>
-       </div>
-
-     <div class="row">
-          <div>
-                <div class="col-md-12">
-                    {{content.field_long_text}}
-                </div>
-
-          </div>
-     </div>
-
-
-
-
-
-
+  <div {{ content_attributes.addClass('content, row') }}>
+    {{ content }}
   </div>
 
 </article>
