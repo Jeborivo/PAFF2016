@@ -348,17 +348,6 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: 8caacbfe-ae95-4d0f-9b28-2de5ed0337fb
-      47749a29-7b33-422e-8740-4d7251a6704a:
-        id: system_powered_by_block
-        label: 'Powered by Drupal'
-        provider: system
-        label_display: 0
-        region: footer
-        weight: '-3'
-        context_mapping: {  }
-        theme: PAFF
-        unique: 0
-        uuid: 47749a29-7b33-422e-8740-4d7251a6704a
       a9380acc-05e6-4017-a591-425052d36ffe:
         id: 'views_block:documents-block_1'
         label: ''

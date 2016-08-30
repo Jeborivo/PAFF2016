@@ -40,9 +40,10 @@ content:
   body:
     weight: 3
     label: above
-    settings: {  }
+    settings:
+      trim_length: 600
     third_party_settings: {  }
-    type: text_default
+    type: text_trimmed
   field_cast:
     weight: 11
     label: above
