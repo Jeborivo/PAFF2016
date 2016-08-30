@@ -303,26 +303,12 @@ reactions:
         label_display: visible
         views_label: ''
         items_per_page: none
-        region: footer
-        weight: '0'
-        context_mapping: {  }
-        theme: PAFF
-        unique: 0
-        uuid: f97e8808-8004-4b8b-a9da-60c36d0a06cf
-      c318e692-90b0-4ce1-9375-e0d5d85e1f08:
-        id: 'block_content:5f09f600-fb27-44e9-8f49-bf3197da3f36'
-        label: 'Download schedule'
-        provider: block_content
-        label_display: visible
-        status: true
-        info: ''
-        view_mode: full
-        region: sidebar_second
+        region: above_footer
         weight: '-3'
         context_mapping: {  }
         theme: PAFF
         unique: 0
-        uuid: c318e692-90b0-4ce1-9375-e0d5d85e1f08
+        uuid: f97e8808-8004-4b8b-a9da-60c36d0a06cf
       fe774e6b-8df1-4ac9-9b05-b0a630e4dc95:
         id: 'views_block:slider-block_1'
         label: ''
@@ -349,6 +335,43 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: b25d2b13-b49b-46f7-93dc-dbe09601435f
+      8caacbfe-ae95-4d0f-9b28-2de5ed0337fb:
+        id: 'system_menu_block:footer'
+        label: Footer
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        region: footer
+        weight: '-4'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 8caacbfe-ae95-4d0f-9b28-2de5ed0337fb
+      47749a29-7b33-422e-8740-4d7251a6704a:
+        id: system_powered_by_block
+        label: 'Powered by Drupal'
+        provider: system
+        label_display: 0
+        region: footer
+        weight: '-3'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 47749a29-7b33-422e-8740-4d7251a6704a
+      a9380acc-05e6-4017-a591-425052d36ffe:
+        id: 'views_block:documents-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: a9380acc-05e6-4017-a591-425052d36ffe
     id: blocks
     saved: false
     uuid: 509e07cd-5f50-4153-bac4-2a38458b4dd5

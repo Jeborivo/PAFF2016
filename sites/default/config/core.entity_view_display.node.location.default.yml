@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.location.field_geofield
     - field.field.node.location.field_image
     - field.field.node.location.field_long_text
+    - image.style.large
     - node.type.location
   module:
     - address
     - image
+    - leaflet
     - text
     - user
 id: node.location.default
@@ -19,28 +21,56 @@ bundle: location
 mode: default
 content:
   field_address:
-    weight: 103
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: address_default
-  field_image:
-    weight: 102
+  field_geofield:
+    type: leaflet_formatter_default
+    weight: 4
     label: above
     settings:
-      image_style: ''
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      zoom: 10
+      minPossibleZoom: 0
+      maxPossibleZoom: 18
+      minZoom: 0
+      maxZoom: 18
+      popup: false
+      icon:
+        icon_url: ''
+        shadow_url: ''
+        icon_size:
+          x: 0
+          'y': 0
+        icon_anchor:
+          x: 0
+          'y': 0
+        shadow_anchor:
+          x: 0
+          'y': 0
+        popup_anchor:
+          x: 0
+          'y': 0
+    third_party_settings: {  }
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
   field_long_text:
-    weight: 101
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   links:
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_geofield: true
+hidden: {  }

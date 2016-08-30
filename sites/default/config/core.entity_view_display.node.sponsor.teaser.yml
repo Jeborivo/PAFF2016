@@ -18,7 +18,7 @@ mode: teaser
 content:
   field_image:
     type: image_url
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       url_type: '0'
@@ -27,7 +27,7 @@ content:
     third_party_settings: {  }
   field_link:
     type: link_separate
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       trim_length: 80
@@ -36,8 +36,5 @@ content:
       url_only: false
       url_plain: false
     third_party_settings: {  }
-  links:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

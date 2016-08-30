@@ -9,21 +9,25 @@ dependencies:
     - node.type.documentation
   module:
     - file
+    - text
     - user
 id: node.documentation.teaser
 targetEntityType: node
 bundle: documentation
 mode: teaser
 content:
+  field_description:
+    type: text_trimmed
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
   field_file:
     type: file_default
     weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  links:
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_description: true
+  links: true

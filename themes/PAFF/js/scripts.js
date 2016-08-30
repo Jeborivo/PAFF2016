@@ -34,11 +34,10 @@
             dots: false,
             focusOnSelect: true,
             infinite: true,
-            prevArrow: false,
-            nextArrow:false,
+            prevArrow: '<a class="slick-prev"><i class="fa fa-caret-left fa-4x"></i></a>',
+            nextArrow: '<a class="slick-next"><i class="fa fa-caret-right fa-4x"></i></a>',
             swipe: true,
-            slickPrev: false,
-            slickNext: false,
+
 
 
           });

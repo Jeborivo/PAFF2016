@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.person.field_filmography
+    - field.field.node.person.field_image
+    - field.field.node.person.field_long_text
     - node.type.person
   module:
     - user

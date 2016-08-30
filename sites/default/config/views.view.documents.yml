@@ -1,18 +1,15 @@
-uuid: c333468e-5a05-4ad5-b877-23bf709d6a32
+uuid: 37788f1f-f996-485f-9b3d-de3712364c27
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.storage.node.field_address
-    - node.type.location
-    - views.view.map
+    - node.type.documentation
   module:
-    - address
     - node
     - user
-id: locations
-label: Locations
+id: documents
+label: Documents
 module: views
 description: ''
 tag: ''
@@ -52,32 +49,15 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: full
+        type: some
         options:
-          items_per_page: 50
+          items_per_page: 10
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
       style:
         type: default
       row:
         type: 'entity:node'
         options:
-          relationship: none
           view_mode: teaser
       fields:
         title:
@@ -127,11 +107,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_address:
-          id: field_address
-          table: node__field_address
-          field: field_address
-          plugin_id: field
       filters:
         status:
           value: true
@@ -149,7 +124,7 @@ display:
           table: node_field_data
           field: type
           value:
-            location: location
+            documentation: documentation
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -169,19 +144,8 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Locations
-      header:
-        view:
-          id: view
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          view_to_insert: 'map:block_1'
-          inherit_arguments: true
-          plugin_id: view
+      title: Documents
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -192,26 +156,21 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_address'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
     position: 1
     display_options:
       display_extenders: {  }
-      path: locations
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_address'
+      tags: {  }

@@ -115,19 +115,23 @@
   {% endblock %}
 {% endif %}
 
-{# Main #}
-{% block main %}
 {# Header #}
 {% if page.header %}
   {% block header %}
-    <div class="col-sm-12" role="heading">
+    <div role="heading">
       {{ page.header }}
     </div>
 
   {% endblock %}
 {% endif %}
+
+{# Main #}
+{% block main %}
+
 </div>
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+
+
 
     <div class="row">
 

@@ -22,7 +22,34 @@
   }
 }
 .news-margin {
-margin:15px;
+margin-top:15px;
+}
 
-
+.slider-slider-nav {
+  .views-row {
+    position:relative;
+    .views-field-title {
+      display: none;
+    }
+      &:hover {
+        background-color: rgba(0, 0, 0, 1);
+        .views-field-title {
+          display:block;
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 0 10px;
+          text-align: center;
+          font-size: 22px;
+          font-weight: bold;
+            a {
+            color: white;
+            }
+          }
+        img {
+          opacity: 0.4;
+        }
+      }
+  }
 }

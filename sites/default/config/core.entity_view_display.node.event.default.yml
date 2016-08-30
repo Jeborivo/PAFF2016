@@ -44,7 +44,7 @@ content:
     type: datetime_default
   field_image:
     weight: 3
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -53,10 +53,9 @@ content:
   field_long_text:
     weight: 4
     label: above
-    settings:
-      trim_length: 500
+    settings: {  }
     third_party_settings: {  }
-    type: text_trimmed
+    type: text_default
   links:
     weight: 0
     settings: {  }

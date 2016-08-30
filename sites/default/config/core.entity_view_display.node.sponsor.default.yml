@@ -35,8 +35,5 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

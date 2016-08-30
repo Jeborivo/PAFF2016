@@ -5934,7 +5934,7 @@ button.close {
   margin-left: 25px;
 }
 .path-frontpage .background-img {
-  background-image: url('hero-transparent.jpg');
+  background-image: url('../images/hero-transparent.jpg');
   background-size: cover;
 }
 .path-frontpage .main-container {
@@ -6039,7 +6039,33 @@ button.close {
   font-size: 20px;
 }
 .news-margin {
-  margin: 15px;
+  margin-top: 15px;
+}
+.slider-slider-nav .views-row {
+  position: relative;
+}
+.slider-slider-nav .views-row .views-field-title {
+  display: none;
+}
+.slider-slider-nav .views-row:hover {
+  background-color: #000000;
+}
+.slider-slider-nav .views-row:hover .views-field-title {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.slider-slider-nav .views-row:hover .views-field-title a {
+  color: white;
+}
+.slider-slider-nav .views-row:hover img {
+  opacity: 0.4;
 }
 .view-sponsors {
   text-align: center;

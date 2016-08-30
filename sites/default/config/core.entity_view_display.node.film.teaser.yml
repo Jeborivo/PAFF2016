@@ -27,21 +27,30 @@ dependencies:
     - field.field.node.film.field_year
     - node.type.film
   module:
+    - datetime
     - user
 id: node.film.teaser
 targetEntityType: node
 bundle: film
 mode: teaser
 content:
+  field_date_and_time:
+    type: datetime_plain
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
   field_cast: true
   field_contact: true
   field_content_reference: true
   field_country: true
-  field_date_and_time: true
   field_director: true
   field_duration: true
   field_editing: true

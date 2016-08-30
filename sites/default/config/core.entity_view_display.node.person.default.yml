@@ -24,7 +24,7 @@ content:
     type: text_default
   field_image:
     weight: 101
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -38,4 +38,6 @@ content:
     type: text_default
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
