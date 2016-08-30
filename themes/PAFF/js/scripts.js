@@ -11,6 +11,7 @@
                 speed: 300,
                 variableWidth: true,
                 slidesToShow: 3,
+                center:true,
                 arrows: false,
                 centerMode: true
             });
