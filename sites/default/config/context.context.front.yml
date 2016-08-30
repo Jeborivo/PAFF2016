@@ -291,7 +291,7 @@ reactions:
         info: ''
         view_mode: full
         region: sidebar_second
-        weight: '-2'
+        weight: '-3'
         context_mapping: {  }
         theme: PAFF
         unique: 0
@@ -356,7 +356,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: sidebar_second
-        weight: '0'
+        weight: '-4'
         context_mapping: {  }
         theme: PAFF
         unique: 0

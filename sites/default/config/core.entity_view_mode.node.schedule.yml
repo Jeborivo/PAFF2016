@@ -1,0 +1,10 @@
+uuid: a1d7850d-4b54-4290-9a21-68770e5c9155
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.schedule
+label: 'Mini teaser'
+targetEntityType: node
+cache: true

@@ -56,6 +56,10 @@ display:
           offset: 0
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: 'row in-block down-margin'
+          default_row_class: true
       row:
         type: fields
         options:
@@ -228,13 +232,14 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Documents
+      title: 'Download schedule'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

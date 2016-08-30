@@ -4985,6 +4985,7 @@ button.list-group-item-danger.active:focus {
   margin-bottom: 20px;
   background-color: #6ea797;
   color: white;
+  text-align: center;
 }
 .well h2,
 .well a {
@@ -6023,6 +6024,7 @@ button.close {
   margin-bottom: 20px;
   background-color: #6ea797;
   color: white;
+  text-align: center;
 }
 .region-sidebar-second .block h2,
 .region-sidebar-second .block a {
@@ -6066,6 +6068,17 @@ button.close {
 }
 .slider-slider-nav .views-row:hover img {
   opacity: 0.4;
+}
+.block-views-blockfilm-event-location-block-1 {
+  margin-top: 110px;
+}
+.block-views-blockdocuments-block-1 {
+  margin-top: 60px;
+  background-color: white;
+  color: #6ea797;
+}
+.down-margin {
+  margin-right: 15px;
 }
 .view-sponsors {
   text-align: center;
