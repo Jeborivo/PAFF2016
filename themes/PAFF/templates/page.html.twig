@@ -59,22 +59,22 @@
 
 <div class="background-img clearfix">
   <div class="transparency">
-<div class="container">
-    <div class="paff-logo">
-      <a href="{{ url('view.frontpage.page_1')  }}"><img src="{{ base_path ~ directory }}/logo.png" alt="My Logo"/></a>
+    <div class="container">
+      <div class="paff-logo">
+        <a href="{{ url('view.frontpage.page_1')  }}"><img src="{{ base_path ~ directory }}/logo.png" alt="My Logo"/></a>
+      </div>
+      <div class="pull-right">
+        <div class="in-block">
+          <h2 class="date">07.-11. September, 2016.</h2>
+        </div>
+        <div class="in-block">
+          <a href="{{ url('view.frontpage.page_1')  }}"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="in-block">
+          <a href="{{ url('view.frontpage.page_1')  }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div><div class="clearfix"></div>
     </div>
-    <div class="pull-right">
-      <div class="in-block">
-        <h2 class="date">07.-11. September, 2016.</h2>
-    </div>
-    <div class="in-block">
-      <a href="{{ url('view.frontpage.page_1')  }}"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-    </div>
-    <div class="in-block">
-      <a href="{{ url('view.frontpage.page_1')  }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-    </div>
-    </div><div class="clearfix"></div>
-</div>
   </div>
 
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
@@ -199,10 +199,21 @@
   </div>
 {% endblock %}
 
+<div class="row">
+  <div class="container">
+    <div class="container">
+      {{ page.above_footer }}
+    </div>
+  </div>
+</div>
+
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
+    <footer class="footer background-img" role="contentinfo">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+      	&copy; Pančevo Film Festival {{ "now"|date("Y") }}.
     </footer>
   {% endblock %}
 {% endif %}

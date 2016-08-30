@@ -6007,6 +6007,13 @@ button.close {
     margin-bottom: 0;
   }
 }
+.footer {
+  border-top: 3px solid black;
+  text-align: center;
+}
+.footer.background-img {
+  background-position: top center;
+}
 .block-views-blockdownload-block-1 {
   margin-bottom: 50px;
 }
@@ -6720,7 +6727,6 @@ ul {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
 }
 p:last-child,
 .form-group:last-child,
