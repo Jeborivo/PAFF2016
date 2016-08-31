@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.location.field_geofield
     - field.field.node.location.field_image
     - field.field.node.location.field_long_text
-    - image.style.large
+    - image.style.location_default
     - node.type.location
   module:
     - address
@@ -59,7 +59,7 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: large
+      image_style: location_default
       image_link: ''
     third_party_settings: {  }
     type: image

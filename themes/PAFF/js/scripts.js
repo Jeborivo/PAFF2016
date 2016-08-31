@@ -35,8 +35,8 @@
             dots: false,
             focusOnSelect: true,
             infinite: true,
-            prevArrow: '<a class="slick-prev"><i class="fa fa-caret-left fa-4x"></i></a>',
-            nextArrow: '<a class="slick-next"><i class="fa fa-caret-right fa-4x"></i></a>',
+            prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left fa-5x pull-left"></i></a>',
+            nextArrow: '<a class="slick-next"><i class="fa fa-angle-right fa-5x pull-right "></i></a>',
             swipe: true,
 
 

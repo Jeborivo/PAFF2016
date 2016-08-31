@@ -1,0 +1,14 @@
+uuid: 288e4674-3294-473c-a303-bd1f3fcf1ed6
+langcode: en
+status: true
+dependencies: {  }
+name: location_default
+label: Location_default
+effects:
+  a11e0ece-2cdb-4cd1-b3ad-b65f82513ba0:
+    uuid: a11e0ece-2cdb-4cd1-b3ad-b65f82513ba0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 847
+      height: 300

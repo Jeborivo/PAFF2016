@@ -95,17 +95,13 @@
     </footer>
   {% endif %}
 
-    <div{{ content_attributes.addClass('content') }}>
-      <div class="loc-top-margin">
-        {{content.field_long_text}}
-      </div>
-
-      <div class="loc-top-margin loc-bot-margin">
-        {{content.field_image}}
-      </div>
-
-      {{content.field_address}}
-      {{content.field_geofield}}
-    </div>
+  <div{{ content_attributes.addClass('content') }}>
+     <div>
+            {{content.field_description}}
+     </div>
+     <div>
+            {{content.field_file}}
+     </div>
+  </div>
 
 </article>

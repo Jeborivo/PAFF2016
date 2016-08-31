@@ -271,17 +271,6 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: c83a1e8f-e1bf-4edf-94aa-dcd757f78b23
-      59deadab-1901-44f9-baae-dea268d97b6d:
-        id: search_form_block
-        label: 'Search form'
-        provider: search
-        label_display: visible
-        region: navigation
-        weight: '-1'
-        context_mapping: {  }
-        theme: PAFF
-        unique: 0
-        uuid: 59deadab-1901-44f9-baae-dea268d97b6d
       73f1db9f-b339-421b-bec6-5f76d95e5874:
         id: 'block_content:3985bbb4-38e9-490a-80df-779865888274'
         label: Dates

@@ -78,12 +78,16 @@
     width:100%;
   }
   @media (min-width: @screen-md){
+    .navbar-nav {
+      width:100%;
+    }
     .navbar-nav li{
       &:first-child a{
         padding-left: 15px;
+        margin-right: 55px;
       }
       + li{
-        margin-left:10px;
+        margin: 0 55px;
       }
     }
     .block-search {
@@ -97,5 +101,24 @@
         margin-bottom: 0;
       }
     }
+  }
+}
+.hover-black i:hover{
+  color:black;
+}
+.path-frontpage .views-element-container{
+  position:relative;
+  .fa-angle-left {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+    right:97%;
+  }
+  .fa-angle-right {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 100%;
   }
 }

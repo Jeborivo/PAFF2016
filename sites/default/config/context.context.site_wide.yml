@@ -317,17 +317,6 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: 97ce2de9-8cbc-43ea-95c1-47f0ae1c7560
-      38fe41ba-c579-4012-952e-1e2bf3f46b71:
-        id: page_title_block
-        label: 'Page title'
-        provider: core
-        label_display: 0
-        region: highlighted
-        weight: '-3'
-        context_mapping: {  }
-        theme: PAFF
-        unique: 0
-        uuid: 38fe41ba-c579-4012-952e-1e2bf3f46b71
       5c807e6c-fc06-438b-a45e-6f0230db8d88:
         id: local_tasks_block
         label: Tabs
@@ -352,17 +341,6 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: 7dc668d8-27f4-4fea-89a3-85d4ca682094
-      cfa4367c-a958-437c-89f2-c3c49babbb36:
-        id: search_form_block
-        label: 'Search form'
-        provider: search
-        label_display: visible
-        region: navigation
-        weight: '-2'
-        context_mapping: {  }
-        theme: PAFF
-        unique: 0
-        uuid: cfa4367c-a958-437c-89f2-c3c49babbb36
       c41e761d-b2a9-4c5d-9897-dbc8e1aa38f9:
         id: 'system_menu_block:footer'
         label: Footer

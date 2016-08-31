@@ -5990,11 +5990,15 @@ button.close {
   width: 100%;
 }
 @media (min-width: 992px) {
+  .navbar .navbar-nav {
+    width: 100%;
+  }
   .navbar .navbar-nav li:first-child a {
     padding-left: 15px;
+    margin-right: 55px;
   }
   .navbar .navbar-nav li + li {
-    margin-left: 10px;
+    margin: 0 55px;
   }
   .navbar .block-search {
     float: right;
@@ -6008,12 +6012,34 @@ button.close {
     margin-bottom: 0;
   }
 }
+.hover-black i:hover {
+  color: black;
+}
+.path-frontpage .views-element-container {
+  position: relative;
+}
+.path-frontpage .views-element-container .fa-angle-left {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 1;
+  right: 97%;
+}
+.path-frontpage .views-element-container .fa-angle-right {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 100%;
+}
 .footer {
   border-top: 3px solid black;
   text-align: center;
 }
 .footer.background-img {
   background-position: top center;
+}
+.site-wide-margin {
+  margin-top: 40px;
 }
 .block-views-blockdownload-block-1 {
   margin-bottom: 50px;
@@ -6790,4 +6816,10 @@ p:last-child,
 .help-block:first-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
+}
+.loc-top-margin {
+  margin-top: 15px;
+}
+.loc-bot-margin {
+  margin-bottom: 15px;
 }
