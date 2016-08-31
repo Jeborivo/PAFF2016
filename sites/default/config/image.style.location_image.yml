@@ -1,0 +1,14 @@
+uuid: 49a59d7c-469c-49c1-8fbd-fd884b48d71d
+langcode: en
+status: true
+dependencies: {  }
+name: location_image
+label: Location_image
+effects:
+  1293bf6a-032a-4ef3-a1d9-4606d23faeeb:
+    uuid: 1293bf6a-032a-4ef3-a1d9-4606d23faeeb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 200
