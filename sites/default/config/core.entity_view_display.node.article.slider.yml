@@ -33,7 +33,7 @@ content:
     weight: 0
     settings:
       image_style: slider
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     label: hidden
 hidden:
