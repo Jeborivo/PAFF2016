@@ -95,8 +95,17 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
-  </div>
+    <div{{ content_attributes.addClass('content') }}>
+      <div class="m-t-1">
+        {{content.field_long_text}}
+      </div>
+
+      <div>
+        {{content.field_image}}
+      </div>
+
+      {{content.field_address}}
+      {{content.field_geofield}}
+    </div>
 
 </article>
