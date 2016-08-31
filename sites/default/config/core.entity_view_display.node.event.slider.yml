@@ -48,7 +48,7 @@ content:
     label: hidden
     settings:
       image_style: slider
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     type: image
   field_long_text:

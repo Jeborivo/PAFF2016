@@ -5932,7 +5932,8 @@ button.close {
   display: none !important;
 }
 .path-frontpage .region-header .slick-margin {
-  margin-left: 25px;
+  margin-left: 5px;
+  margin-right: 15px;
 }
 .background-img {
   background-image: url('../images/hero-transparent.jpg');
@@ -6020,14 +6021,14 @@ button.close {
 }
 .path-frontpage .views-element-container .fa-angle-left {
   position: absolute;
-  top: 60%;
+  top: 63%;
   transform: translateY(-50%);
   z-index: 1;
-  right: 97%;
+  right: 100%;
 }
 .path-frontpage .views-element-container .fa-angle-right {
   position: absolute;
-  top: 60%;
+  top: 63%;
   transform: translateY(-50%);
   left: 100%;
 }
@@ -6105,6 +6106,10 @@ button.close {
 }
 .down-margin {
   margin-right: 15px;
+}
+.film-margin {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .view-sponsors {
   text-align: center;

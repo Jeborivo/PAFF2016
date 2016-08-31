@@ -39,7 +39,7 @@ mode: slider
 content:
   body:
     weight: 3
-    label: above
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
@@ -111,7 +111,7 @@ content:
     label: hidden
     settings:
       image_style: slider
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     type: image
   field_music:

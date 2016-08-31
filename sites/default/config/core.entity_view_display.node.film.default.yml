@@ -105,7 +105,7 @@ content:
     type: entity_reference_label
   field_image:
     weight: 21
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
