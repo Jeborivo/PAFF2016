@@ -76,7 +76,7 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
- 
+
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -96,7 +96,12 @@
   {% endif %}
 
   <div {{ content_attributes.addClass('content, row') }}>
-    {{ content }}
+      <div class="col-md-2">
+          {{content.field_image}}
+      </div>
+      <div class="col-md-10">
+          {{content.body}}
+      </div>
   </div>
 
 </article>
