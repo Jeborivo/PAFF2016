@@ -1,0 +1,39 @@
+uuid: 95b12b22-f6b1-4d9d-9436-c7490c75d4fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+name: event
+label: Event
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+    negate: 0
+    uuid: b3f1b12b-8593-4e0a-a672-42f03736dfab
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    blocks:
+      12f276a2-45ee-4b58-a7f5-c7e42cacf2d3:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: highlighted
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 12f276a2-45ee-4b58-a7f5-c7e42cacf2d3
+    id: blocks
+    saved: false
+    uuid: 82f610a2-9947-457c-a7d5-6ba7a92eec69
+weight: 0

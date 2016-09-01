@@ -1,0 +1,14 @@
+uuid: b6fc7e0a-ee0d-4440-82ac-5c6417cc4bed
+langcode: en
+status: true
+dependencies: {  }
+name: schedule_style
+label: 'Schedule style'
+effects:
+  b33572de-3df0-4c5c-ac74-26f2f9b3c57f:
+    uuid: b33572de-3df0-4c5c-ac74-26f2f9b3c57f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 325
+      height: 325

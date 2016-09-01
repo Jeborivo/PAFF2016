@@ -123,6 +123,17 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: b282a81e-fd2f-4d61-a59f-12f83250a99b
+      6914e89f-f231-448a-9049-80e09dd89553:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: highlighted
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 6914e89f-f231-448a-9049-80e09dd89553
     id: blocks
     saved: false
     uuid: c89b7dd6-3592-4ff6-917d-65032a4446c0

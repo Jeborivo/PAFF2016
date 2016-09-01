@@ -271,20 +271,6 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: c83a1e8f-e1bf-4edf-94aa-dcd757f78b23
-      73f1db9f-b339-421b-bec6-5f76d95e5874:
-        id: 'block_content:3985bbb4-38e9-490a-80df-779865888274'
-        label: Dates
-        provider: block_content
-        label_display: visible
-        status: true
-        info: ''
-        view_mode: full
-        region: sidebar_second
-        weight: '-3'
-        context_mapping: {  }
-        theme: PAFF
-        unique: 0
-        uuid: 73f1db9f-b339-421b-bec6-5f76d95e5874
       f97e8808-8004-4b8b-a9da-60c36d0a06cf:
         id: 'views_block:sponsors-block_1'
         label: ''
@@ -350,6 +336,19 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: a9380acc-05e6-4017-a591-425052d36ffe
+      072f9ab2-9674-4d44-9f0d-414eb93bfacf:
+        id: 'views_block:schedule_page-block_2'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: 072f9ab2-9674-4d44-9f0d-414eb93bfacf
     id: blocks
     saved: false
     uuid: 509e07cd-5f50-4153-bac4-2a38458b4dd5

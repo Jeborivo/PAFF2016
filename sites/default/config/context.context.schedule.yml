@@ -1,0 +1,39 @@
+uuid: cb6af0ff-96d1-4e82-9f85-eda50ae53587
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: schedule
+label: Schedule
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: /schedule
+    negate: 0
+    uuid: e003c9a9-42aa-47bb-86c1-d5ca33f83113
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      b1c31e0d-1ed3-407b-8bc2-ab63553ec39b:
+        id: 'views_block:schedule_page-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: sidebar_second
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: b1c31e0d-1ed3-407b-8bc2-ab63553ec39b
+    id: blocks
+    saved: false
+    uuid: 176196af-f251-43e8-be1c-ad06a7908d79
+weight: 0

@@ -1,9 +1,9 @@
-uuid: 382d64af-6156-4396-af55-14c5bb105f42
+uuid: 57b4af76-68cc-476d-af89-72ab520fb78e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.list
     - field.field.node.event.field_content_reference
     - field.field.node.event.field_date_and_time
     - field.field.node.event.field_en
@@ -13,45 +13,37 @@ dependencies:
   module:
     - datetime
     - image
-    - text
     - user
-id: node.event.teaser
+id: node.event.list
 targetEntityType: node
 bundle: event
-mode: teaser
+mode: list
 content:
   field_date_and_time:
-    type: datetime_plain
-    weight: 3
+    weight: 0
     label: above
     settings:
+      format_type: medium
       timezone_override: ''
     third_party_settings: {  }
+    type: datetime_default
   field_en:
-    type: datetime_plain
-    weight: 4
+    weight: 1
     label: above
     settings:
+      format_type: medium
       timezone_override: ''
     third_party_settings: {  }
+    type: datetime_default
   field_image:
-    type: image
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-  field_long_text:
-    type: text_trimmed
-    weight: 2
-    label: above
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-  links:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
+    type: image
 hidden:
   field_content_reference: true
+  field_long_text: true
+  links: true
