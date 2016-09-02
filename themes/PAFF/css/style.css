@@ -5002,6 +5002,14 @@ button.list-group-item-danger.active:focus {
   padding: 9px;
   border-radius: 0;
 }
+.path-frontpage .well-vesti {
+  background-image: url("../images/news_pozadina.jpg");
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.path-frontpage .well-vesti a {
+  color: #6d69a8;
+}
 .close {
   float: right;
   font-size: 21px;
@@ -5989,6 +5997,7 @@ button.close {
 }
 .navbar .navbar-header {
   width: 100%;
+  text-transform: uppercase;
 }
 @media (min-width: 992px) {
   .navbar .navbar-nav {
@@ -5999,21 +6008,10 @@ button.close {
   }
   .navbar .navbar-nav li:first-child a {
     padding-left: 15px;
-    margin-right: 55px;
+    margin-right: 45px;
   }
   .navbar .navbar-nav li + li {
-    margin: 0 55px;
-  }
-  .navbar .block-search {
-    float: right;
-    margin-top: 8px;
-    width: 320px;
-  }
-  .navbar .block-search .input-group {
-    width: 320px;
-  }
-  .navbar .block-search .form-item {
-    margin-bottom: 0;
+    margin: 0 45px;
   }
 }
 .hover-black i:hover {
