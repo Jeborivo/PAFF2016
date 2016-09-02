@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.schedule
+    - core.entity_view_mode.node.mini_teaser
   module:
     - node
     - user
@@ -58,7 +58,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: schedule
+          view_mode: mini_teaser
       fields:
         title:
           id: title

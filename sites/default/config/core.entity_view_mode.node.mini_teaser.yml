@@ -1,10 +1,10 @@
-uuid: a1d7850d-4b54-4290-9a21-68770e5c9155
+uuid: f937a8b4-19fa-4e5a-b550-a1be18acd4fd
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.schedule
-label: 'Mini teaser'
+id: node.mini_teaser
+label: 'mini teaser'
 targetEntityType: node
 cache: true

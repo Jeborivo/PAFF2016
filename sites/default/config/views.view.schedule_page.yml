@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_date_and_time
     - node.type.event
     - node.type.film
+    - system.menu.main
   module:
     - datetime
     - node
@@ -543,7 +544,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="schedule/{{ field_date_and_time_1 }}">{{ field_date_and_time }}</div>'
+            text: '<a href="schedule/{{ field_date_and_time_1 }}">{{ field_date_and_time }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -784,6 +785,15 @@ display:
         options:
           relationship: none
           view_mode: list
+      menu:
+        type: normal
+        title: Schedule
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -47
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.slider
     - core.entity_view_mode.node.teaser
     - node.type.article
+    - system.menu.main
   module:
     - node
     - user
@@ -341,6 +342,15 @@ display:
       use_more: false
       use_more_always: true
       use_more_text: More
+      menu:
+        type: normal
+        title: News
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -49
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

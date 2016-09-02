@@ -1,9 +1,9 @@
-uuid: 06548fe3-5fd4-4eb5-b7b8-ebf109d21963
+uuid: 9e0670f3-02ac-45fe-865f-1e19b7e2a70d
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.schedule
+    - core.entity_view_mode.node.mini_teaser
     - field.field.node.film.body
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
@@ -29,10 +29,10 @@ dependencies:
   module:
     - datetime
     - user
-id: node.film.schedule
+id: node.film.mini_teaser
 targetEntityType: node
 bundle: film
-mode: schedule
+mode: mini_teaser
 content:
   field_date_and_time:
     weight: 0
