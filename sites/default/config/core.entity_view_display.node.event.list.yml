@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_en
     - field.field.node.event.field_image
     - field.field.node.event.field_long_text
+    - image.style.schedule_style
     - node.type.event
   module:
     - datetime
@@ -39,8 +40,8 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: schedule_style
+      image_link: content
     third_party_settings: {  }
     type: image
 hidden:

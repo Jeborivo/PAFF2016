@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.film.field_sound
     - field.field.node.film.field_title_original
     - field.field.node.film.field_year
+    - image.style.schedule_style
     - node.type.film
   module:
     - datetime
@@ -40,8 +41,8 @@ content:
     weight: 1
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
     type: datetime_default
   field_image:
@@ -49,8 +50,8 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: schedule_style
+      image_link: content
     third_party_settings: {  }
   field_title_original:
     weight: 0
