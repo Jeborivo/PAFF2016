@@ -1,0 +1,20 @@
+uuid: 44722e3c-2b7e-43e4-9ed8-c22606df6668
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screening
+  module:
+    - text
+id: taxonomy_term.screening.description
+field_name: description
+entity_type: taxonomy_term
+bundle: screening
+label: Description
+description: 'A description of the term.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: d22f2c5f-9966-4082-9ffb-0123472660eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.shooting
+  module:
+    - text
+id: taxonomy_term.shooting.description
+field_name: description
+entity_type: taxonomy_term
+bundle: shooting
+label: Description
+description: 'A description of the term.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

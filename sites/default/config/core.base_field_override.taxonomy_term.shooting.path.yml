@@ -1,0 +1,20 @@
+uuid: a9f96a7a-8519-41a0-b531-7ba33598200c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.shooting
+  module:
+    - path
+id: taxonomy_term.shooting.path
+field_name: path
+entity_type: taxonomy_term
+bundle: shooting
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: e4fe8cca-ad33-406b-be20-6f3291423d76
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.film
+id: node.film.changed
+field_name: changed
+entity_type: node
+bundle: film
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

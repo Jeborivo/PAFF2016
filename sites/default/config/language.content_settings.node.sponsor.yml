@@ -1,0 +1,16 @@
+uuid: 40263f94-d225-4594-82cf-cdde90d12f52
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.sponsor
+target_entity_type_id: node
+target_bundle: sponsor
+default_langcode: site_default
+language_alterable: false

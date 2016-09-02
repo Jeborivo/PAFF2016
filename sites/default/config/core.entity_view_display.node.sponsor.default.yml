@@ -36,4 +36,5 @@ content:
     third_party_settings: {  }
     type: link
 hidden:
+  langcode: true
   links: true

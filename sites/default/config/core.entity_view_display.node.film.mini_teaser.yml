@@ -63,4 +63,5 @@ hidden:
   field_sound: true
   field_title_original: true
   field_year: true
+  langcode: true
   links: true

@@ -1,0 +1,18 @@
+uuid: 13b5d544-4a6b-4975-ac4d-93523120a7be
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screening
+id: taxonomy_term.screening.name
+field_name: name
+entity_type: taxonomy_term
+bundle: screening
+label: Name
+description: 'The term name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

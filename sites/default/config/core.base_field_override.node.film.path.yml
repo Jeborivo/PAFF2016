@@ -1,0 +1,20 @@
+uuid: dd254e02-ee7e-46ec-84c9-d9a523c71c27
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.film
+  module:
+    - path
+id: node.film.path
+field_name: path
+entity_type: node
+bundle: film
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -47,4 +47,5 @@ content:
 hidden:
   field_content_reference: true
   field_long_text: true
+  langcode: true
   links: true

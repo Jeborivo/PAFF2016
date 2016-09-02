@@ -1,0 +1,18 @@
+uuid: c0583d64-8a12-4630-bb5b-fc72b03bc712
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.shooting
+id: taxonomy_term.shooting.name
+field_name: name
+entity_type: taxonomy_term
+bundle: shooting
+label: Name
+description: 'The term name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

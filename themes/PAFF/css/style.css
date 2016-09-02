@@ -5002,13 +5002,16 @@ button.list-group-item-danger.active:focus {
   padding: 9px;
   border-radius: 0;
 }
-.path-frontpage .well-vesti {
+.path-frontpage .region-content .well-vesti {
   background-image: url("../images/news_pozadina.jpg");
   background-size: cover;
   padding-bottom: 50px;
 }
-.path-frontpage .well-vesti a {
+.path-frontpage .region-content .well-vesti a {
   color: #6d69a8;
+}
+.path-frontpage .region-content .well-vesti a:hover {
+  color: #003727;
 }
 .close {
   float: right;
@@ -6114,6 +6117,9 @@ button.close {
 .film-margin {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.field--name-field-image {
+  margin-left: -15px;
 }
 .view-sponsors {
   text-align: center;

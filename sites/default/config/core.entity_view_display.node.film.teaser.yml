@@ -84,4 +84,5 @@ hidden:
   field_shooting: true
   field_sound: true
   field_year: true
+  langcode: true
   links: true

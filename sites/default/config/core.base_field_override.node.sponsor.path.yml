@@ -1,0 +1,20 @@
+uuid: f08fd186-741b-47eb-9c1d-e040d6d26052
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+  module:
+    - path
+id: node.sponsor.path
+field_name: path
+entity_type: node
+bundle: sponsor
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

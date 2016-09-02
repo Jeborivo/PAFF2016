@@ -1,0 +1,16 @@
+uuid: e931652f-7702-4a3d-962d-189c1af861dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.shooting
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.shooting
+target_entity_type_id: taxonomy_term
+target_bundle: shooting
+default_langcode: site_default
+language_alterable: false

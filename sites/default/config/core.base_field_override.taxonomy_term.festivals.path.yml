@@ -1,0 +1,20 @@
+uuid: d108f246-9f39-49b6-a2ac-ef26c0e3bcaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.festivals
+  module:
+    - path
+id: taxonomy_term.festivals.path
+field_name: path
+entity_type: taxonomy_term
+bundle: festivals
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

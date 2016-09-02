@@ -1,0 +1,18 @@
+uuid: 68fc127e-683f-43c3-957e-150d658410e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.festivals
+id: taxonomy_term.festivals.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: festivals
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

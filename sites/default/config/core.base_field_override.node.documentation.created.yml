@@ -1,0 +1,18 @@
+uuid: 3b2b6087-0c4e-41fd-8d41-d6e5e577f130
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.documentation
+id: node.documentation.created
+field_name: created
+entity_type: node
+bundle: documentation
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

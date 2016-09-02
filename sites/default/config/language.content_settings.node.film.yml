@@ -1,0 +1,16 @@
+uuid: c2cf8161-c367-4f5e-a82e-72d7ab68700a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.film
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.film
+target_entity_type_id: node
+target_bundle: film
+default_langcode: site_default
+language_alterable: false

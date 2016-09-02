@@ -1,0 +1,16 @@
+uuid: a730c124-582a-4adc-a5fd-4ca631cc3ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.screening
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.screening
+target_entity_type_id: taxonomy_term
+target_bundle: screening
+default_langcode: site_default
+language_alterable: false

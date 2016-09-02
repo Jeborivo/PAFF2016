@@ -349,6 +349,17 @@ reactions:
         theme: PAFF
         unique: 0
         uuid: 072f9ab2-9674-4d44-9f0d-414eb93bfacf
+      e7bed7d5-004f-4b0a-a26f-ddaf84443112:
+        id: 'language_block:language_interface'
+        label: 'Language switcher'
+        provider: language
+        label_display: 0
+        region: navigation
+        weight: '0'
+        context_mapping: {  }
+        theme: PAFF
+        unique: 0
+        uuid: e7bed7d5-004f-4b0a-a26f-ddaf84443112
     id: blocks
     saved: false
     uuid: 509e07cd-5f50-4153-bac4-2a38458b4dd5

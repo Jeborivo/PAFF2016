@@ -1,0 +1,20 @@
+uuid: d5fe70bf-242d-41be-8a17-493108ea031f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.film
+id: node.film.uid
+field_name: uid
+entity_type: node
+bundle: film
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
