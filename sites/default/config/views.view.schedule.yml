@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.list
     - field.storage.node.field_date_and_time
     - node.type.event
     - node.type.film
@@ -333,7 +333,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: list
     cache_metadata:
       max-age: -1
       contexts:
