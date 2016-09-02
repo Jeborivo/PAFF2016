@@ -88,52 +88,53 @@
       </div>
     </footer>
   {% endif %}
-  <div class="row film-margin">
+
   <div class="col-md-6">
-    <div class="row">
-    <div class="row">
+    <div>
+    <div class="film-margin">
     {{content.field_image}}
   </div>
-  <div class="row">
+  <div>
   <div class="col-md-3">
   {{content.field_director}}
   {{content.field_producer}}
   {{content.field_editing}}
   {{content.field_music}}
   {{content.field_sound}}
-  {{content.field_cast}}
-  </div>
-  <div class="col-md-3">
-  {{content.field_screenplay}}
-  {{content.field_shooting}}
-  {{content.field_country}}
-  {{content.field_production}}
-  {{content.field_festivals}}
-  {{content.field_set_design}}
 
   </div>
   <div class="col-md-3">
-  {{content.field_duration}}
-  {{content.field_content_reference}}
-  {{content.field_screening}}
-  {{content.field_year}}
-  {{content.field_contact}}
+{{content.field_cast}}
+  </div>
+  <div class="col-md-3">
+    {{content.field_screenplay}}
+    {{content.field_shooting}}
+    {{content.field_country}}
+    {{content.field_production}}
+    {{content.field_festivals}}
+    {{content.field_set_design}}
+  </div>
+  <div class="col-md-3">
+    {{content.field_duration}}
+    {{content.field_content_reference}}
+    {{content.field_screening}}
+    {{content.field_year}}
+    {{content.field_contact}}
+  </div>
   </div>
   </div>
   </div>
 
-
-  </div>
   <div class="col-md-6">
-    <div class="row">
+    <div>
       <div class="row">
-        <div class="row">
+        <div>
             <h2 {{ title_attributes }}>
               {{ label }}
             </h2>
         </div>
 
-        <div class="row">
+        <div>
           <div class="col-md-3">
             {{content.field_title_original}}
           </div>
@@ -142,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div>
         {{content.body}}
       </div>
   </div>
