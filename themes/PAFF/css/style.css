@@ -6103,13 +6103,11 @@ button.close {
 .slider-slider-nav .views-row:hover img {
   opacity: 0.4;
 }
-.block-views-blockfilm-event-location-block-1 {
-  margin-top: 110px;
-}
 .block-views-blockdocuments-block-1 {
   margin-top: 60px;
-  background-color: white;
-  color: #6ea797;
+}
+.block-views-blockdocuments-block-1 i {
+  color: white;
 }
 .down-margin {
   margin-right: 15px;
@@ -6117,9 +6115,6 @@ button.close {
 .film-margin {
   margin-top: 20px;
   margin-bottom: 10px;
-}
-.field--name-field-image {
-  margin-left: -15px;
 }
 .view-sponsors {
   text-align: center;
