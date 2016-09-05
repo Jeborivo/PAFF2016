@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.film.field_production
     - field.field.node.film.field_screening
     - field.field.node.film.field_screenplay
+    - field.field.node.film.field_selection
     - field.field.node.film.field_set_design
     - field.field.node.film.field_shooting
     - field.field.node.film.field_sound
@@ -36,7 +37,7 @@ mode: mini_teaser
 content:
   field_date_and_time:
     weight: 0
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -58,6 +59,7 @@ hidden:
   field_production: true
   field_screening: true
   field_screenplay: true
+  field_selection: true
   field_set_design: true
   field_shooting: true
   field_sound: true

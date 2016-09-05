@@ -14,38 +14,44 @@ dependencies:
   module:
     - datetime
     - image
+    - text
     - user
 id: node.event.list
 targetEntityType: node
 bundle: event
 mode: list
 content:
+  field_content_reference:
+    type: entity_reference_label
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
   field_date_and_time:
     weight: 0
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-  field_en:
-    weight: 1
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
   field_image:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       image_style: schedule_style
       image_link: content
     third_party_settings: {  }
     type: image
+  field_long_text:
+    type: text_trimmed
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
 hidden:
-  field_content_reference: true
-  field_long_text: true
+  field_en: true
   langcode: true
   links: true

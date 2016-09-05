@@ -5011,10 +5011,31 @@ button.list-group-item-danger.active:focus {
   color: #6d69a8;
 }
 .path-frontpage .region-content .well-vesti a:hover {
-  color: #003727;
+  color: #4e4a82;
+}
+.well-vesti a {
+  color: #6d69a8;
+}
+.well-vesti a:hover {
+  color: #4e4a82;
 }
 .well-film a {
-  color: #6ea797;
+  color: #42bf9b;
+}
+.well-film a:hover {
+  color: #003727;
+}
+.well-location a {
+  color: #ee9725;
+}
+.well-location a:hover {
+  color: #f0ad4e;
+}
+.well-event a {
+  color: #04b6d6;
+}
+.well-event a:hover {
+  color: #0495af;
 }
 .close {
   float: right;

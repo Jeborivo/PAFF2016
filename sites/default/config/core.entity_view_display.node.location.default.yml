@@ -29,7 +29,7 @@ content:
   field_geofield:
     type: leaflet_formatter_default
     weight: 4
-    label: above
+    label: hidden
     settings:
       leaflet_map: 'OSM Mapnik'
       height: 400

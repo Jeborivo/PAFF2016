@@ -1,0 +1,28 @@
+uuid: a80b831b-999c-401a-9205-e3db2751ecd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_selection
+    - node.type.film
+    - taxonomy.vocabulary.selection
+id: node.film.field_selection
+field_name: field_selection
+entity_type: node
+bundle: film
+label: Selection
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      selection: selection
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

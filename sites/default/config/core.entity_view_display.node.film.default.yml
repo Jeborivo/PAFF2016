@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.film.field_production
     - field.field.node.film.field_screening
     - field.field.node.film.field_screenplay
+    - field.field.node.film.field_selection
     - field.field.node.film.field_set_design
     - field.field.node.film.field_shooting
     - field.field.node.film.field_sound
@@ -144,6 +145,13 @@ content:
     label: above
     settings:
       link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_selection:
+    weight: 22
+    label: hidden
+    settings:
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   field_set_design:
