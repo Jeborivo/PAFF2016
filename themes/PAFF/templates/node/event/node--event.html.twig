@@ -98,7 +98,7 @@
   <div{{ content_attributes.addClass('content') }}>
       <div>
            <div class="row">
-               <div class="col-md-8">
+               <div class="col-md-6">
                   {{content.field_image}}
                </div>
                <div class="col-md-2">
@@ -106,30 +106,18 @@
                </div>
                <div class="col-md-2">
                   {{content.field_en}}
+
+               </div>
+               <div class="row">
+                 <div class="col-md-5">
+                   {{content.field_long_text}}
+                     {{content.field_content_reference}}
+                 </div>
                </div>
            </div>
 
-           <div class="row">
-             <div class="col-md-4 pull-right">
-                {{content.field_content_reference}}
-             </div>
            </div>
        </div>
-
-     <div class="row">
-          <div>
-                <div class="col-md-12">
-                    {{content.field_long_text}}
-                </div>
-
-          </div>
-     </div>
-
-
-
-
-
-
   </div>
 
 </article>
