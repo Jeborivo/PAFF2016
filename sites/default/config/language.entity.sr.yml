@@ -1,9 +1,9 @@
 uuid: 588f23c1-62fd-4fce-bd75-3171a639ae84
-langcode: en
+langcode: sr
 status: true
 dependencies: {  }
 id: sr
-label: Serbian
+label: Srb
 direction: ltr
 weight: 1
 locked: false

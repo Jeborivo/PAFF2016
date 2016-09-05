@@ -5013,6 +5013,9 @@ button.list-group-item-danger.active:focus {
 .path-frontpage .region-content .well-vesti a:hover {
   color: #003727;
 }
+.well-film a {
+  color: #6ea797;
+}
 .close {
   float: right;
   font-size: 21px;
@@ -5972,7 +5975,7 @@ button.close {
   margin-left: 10px;
 }
 .in-block i {
-  color: #969696;
+  color: #6ea797;
   font-size: 28px;
 }
 .date:after {
@@ -6002,6 +6005,34 @@ button.close {
   width: 100%;
   text-transform: uppercase;
 }
+.navbar .navbar-header nav {
+  display: inline-block;
+}
+.navbar .navbar-header .block-language {
+  display: inline-block;
+}
+.navbar .navbar-header .block-language a {
+  color: white;
+}
+.navbar .navbar-header .block-language a:hover {
+  color: #6ea797;
+}
+.navbar .navbar-header .block-language .language-switcher-language-url {
+  padding-left: 0;
+  margin-bottom: 10;
+  font-size: 18px;
+  text-align: center;
+}
+.navbar .navbar-header .block-language .language-switcher-language-url li + li:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 1px solid white;
+  padding-left: 5px;
+  height: 28px;
+  width: 1px;
+  margin-left: 5px;
+}
 @media (min-width: 992px) {
   .navbar .navbar-nav {
     width: 100%;
@@ -6017,8 +6048,31 @@ button.close {
     margin: 0 45px;
   }
 }
-.hover-black i:hover {
-  color: black;
+.navbar .language-switcher-language-url {
+  list-style-type: none;
+  float: right !important;
+}
+.navbar .language-switcher-language-url:before,
+.navbar .language-switcher-language-url:after {
+  content: " ";
+  display: table;
+}
+.navbar .language-switcher-language-url:after {
+  clear: both;
+}
+.navbar .language-switcher-language-url:before,
+.navbar .language-switcher-language-url:after {
+  content: " ";
+  display: table;
+}
+.navbar .language-switcher-language-url:after {
+  clear: both;
+}
+.navbar .language-switcher-language-url li {
+  float: left !important;
+}
+.social i:hover {
+  color: #003727;
 }
 .path-frontpage .views-element-container {
   position: relative;
