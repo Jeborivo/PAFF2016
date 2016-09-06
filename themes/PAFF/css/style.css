@@ -369,7 +369,6 @@ h6,
   font-family: inherit;
   font-weight: 900;
   line-height: 1.1;
-  color: #6ea797;
 }
 h1 small,
 h2 small,
@@ -5007,46 +5006,6 @@ button.list-group-item-danger.active:focus {
   background-size: cover;
   padding-bottom: 50px;
 }
-.well-vesti a {
-  color: #6d69a8;
-}
-.well-vesti a:hover {
-  color: #4e4a82;
-}
-.well-vesti a:focus {
-  outline: none;
-  box-shadow: none;
-}
-.well-film a {
-  color: #42bf9b;
-}
-.well-film a:hover {
-  color: #003727;
-}
-.well-film a:focus {
-  outline: none;
-  box-shadow: none;
-}
-.well-location a {
-  color: #ee9725;
-}
-.well-location a:hover {
-  color: #f0ad4e;
-}
-.well-location a:focus {
-  outline: none;
-  box-shadow: none;
-}
-.well-event a {
-  color: #04b6d6;
-}
-.well-event a:hover {
-  color: #0495af;
-}
-.well-event a:focus {
-  outline: none;
-  box-shadow: none;
-}
 .close {
   float: right;
   font-size: 21px;
@@ -6872,6 +6831,10 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 }
 .the-amazed-spectator h2 {
   color: #04b6d6;
+}
+.page-node-type-film .field--label {
+  font-size: 18px;
+  color: #f4b2b4;
 }
 /**
  * jQuery UI autocomplete widget style overrides.
