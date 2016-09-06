@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.film.field_production
     - field.field.node.film.field_screening
     - field.field.node.film.field_screenplay
+    - field.field.node.film.field_selection
     - field.field.node.film.field_set_design
     - field.field.node.film.field_shooting
     - field.field.node.film.field_sound
@@ -187,4 +188,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_selection: true
   langcode: true

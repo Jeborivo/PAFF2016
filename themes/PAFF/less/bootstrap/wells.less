@@ -37,25 +37,45 @@
     background-image:url("../images/news_pozadina.jpg");
     background-size: cover;
     padding-bottom: 50px;
-    a{
+    a {
       color:@brand-news;
       &:hover{
-        color:@brand-primary;
+        color: #4e4a82;
       }
     }
   }
+}
 
-
+.well-vesti {
+  a {
+  color: @brand-news;
+  &:hover{
+    color: #4e4a82;
+  }
+}
 }
 .well-film {
     a  {
-      color: @brand-blocks;
+      color: @brand-film;
+      &:hover {
+        color: @brand-primary;
+      }
     }
 }
 
 .well-location{
-
+  a  {
+    color: @brand-location;
+    &:hover {
+      color: @brand-warning;
+    }
+  }
 }
 .well-event{
-
+  a  {
+    color: @brand-event;
+    &:hover {
+      color: #0495af;
+    }
+  }
 }

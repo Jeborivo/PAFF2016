@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.film.field_production
     - field.field.node.film.field_screening
     - field.field.node.film.field_screenplay
+    - field.field.node.film.field_selection
     - field.field.node.film.field_set_design
     - field.field.node.film.field_shooting
     - field.field.node.film.field_sound
@@ -163,6 +164,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_selection:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_set_design:
     weight: 15
     settings:
@@ -230,6 +239,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
   uid:
     type: entity_reference_autocomplete
     weight: 1

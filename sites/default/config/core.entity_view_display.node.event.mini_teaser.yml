@@ -20,7 +20,7 @@ mode: mini_teaser
 content:
   field_date_and_time:
     weight: 0
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''

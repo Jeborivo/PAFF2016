@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.person.field_filmography
     - field.field.node.person.field_image
     - field.field.node.person.field_long_text
+    - image.style.large
     - node.type.person
   module:
     - image
@@ -26,7 +27,7 @@ content:
     weight: 101
     label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image

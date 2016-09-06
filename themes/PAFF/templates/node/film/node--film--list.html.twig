@@ -65,6 +65,8 @@
  *   in different view modes.
  */
 #}
+
+
 {%
   set classes = [
     node.bundle|clean_class,
@@ -77,13 +79,6 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
 
   {% if display_submitted %}
     <footer>
@@ -96,7 +91,22 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
+    <div class="col-md-6">
+       {{content.field_image}}
+    </div>
+
+    <div class="col-md-6">
+      {{ title_prefix }}
+      {% if not page %}
+        <h2{{ title_attributes }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+
+  {{ content|without('field_image') }}
+    </div>
+
   </div>
 
 </article>

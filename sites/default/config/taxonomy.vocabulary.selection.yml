@@ -1,0 +1,9 @@
+uuid: 52c48048-e780-4667-9ad8-da302a2866f5
+langcode: en
+status: true
+dependencies: {  }
+name: Selection
+vid: selection
+description: ''
+hierarchy: 0
+weight: 0
