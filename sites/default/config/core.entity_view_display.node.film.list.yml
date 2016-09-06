@@ -40,13 +40,13 @@ mode: list
 content:
   field_content_reference:
     type: entity_reference_label
-    weight: 0
+    weight: 5
     label: above
     settings:
       link: true
     third_party_settings: {  }
   field_date_and_time:
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       timezone_override: ''
@@ -55,14 +55,14 @@ content:
     type: datetime_default
   field_director:
     type: entity_reference_label
-    weight: 0
+    weight: 2
     label: above
     settings:
       link: true
     third_party_settings: {  }
   field_duration:
     type: text_default
-    weight: 0
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }

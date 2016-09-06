@@ -756,7 +756,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<div id="{{ field_date_and_time_1 }}"><h2>{{ field_date_and_time }}</h2></div>'
+            text: '<div class="well"  id="{{ field_date_and_time_1 }}"><h2>{{ field_date_and_time }}</h2></div>'
             make_link: false
             path: ''
             absolute: false
