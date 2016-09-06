@@ -414,7 +414,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="#{{ field_date_and_time_1 }}"><h2>{{ field_date_and_time }}</h2></a>'
+            text: '<a href="#{{ field_date_and_time_1 }}">{{ field_date_and_time }}</a>'
             make_link: false
             path: ''
             absolute: false
