@@ -6849,6 +6849,24 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray > .toolbar-lining:before {
   width: 240px;
 }
+.ponocna-jeza h2 {
+  color: #42bf9b;
+}
+.pafforama h2 {
+  color: #6d69a8;
+}
+.rani-radovi h2 {
+  color: #e71d23;
+}
+.svetionici h2 {
+  color: #ee9725;
+}
+.svetla-buducnost h2 {
+  color: #ed5ca7;
+}
+.the-amazed-spectator h2 {
+  color: #04b6d6;
+}
 /**
  * jQuery UI autocomplete widget style overrides.
  *
