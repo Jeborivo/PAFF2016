@@ -6808,71 +6808,6 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray > .toolbar-lining:before {
   width: 240px;
 }
-.ponocna-jeza h2,
-.ponocna-jeza a {
-  color: #42bf9b;
-}
-.ponocna-jeza h2:hover,
-.ponocna-jeza a:hover {
-  color: #3bab8b;
-}
-.pafforama h2,
-.pafforama a {
-  color: #6d69a8;
-}
-.pafforama h2:hover,
-.pafforama a:hover {
-  color: #585492;
-}
-.rani-radovi h2,
-.rani-radovi a {
-  color: #e71d23;
-}
-.rani-radovi h2:hover,
-.rani-radovi a:hover {
-  color: #d0161c;
-}
-.svetionici h2,
-.svetionici a {
-  color: #ee9725;
-}
-.svetionici h2:hover,
-.svetionici a:hover {
-  color: #d58010;
-}
-.svetla-buducnost h2,
-.svetla-buducnost a {
-  color: #ed5ca7;
-}
-.svetla-buducnost h2:hover,
-.svetla-buducnost a:hover {
-  color: #e8308f;
-}
-.the-amazed-spectator h2,
-.the-amazed-spectator a {
-  color: #04b6d6;
-}
-.the-amazed-spectator h2:hover,
-.the-amazed-spectator a:hover {
-  color: #04abc8;
-}
-.page-node-type-film .field--label {
-  font-size: 18px;
-  color: #f4b2b4;
-}
-.region-sidebar-second {
-  margin-left: 10px;
-}
-.region-sidebar-second .block h3 > a:hover,
-.region-sidebar-second .block a:hover {
-  color: #003727;
-}
-.region-sidebar-second .block .field-content a {
-  display: inline-block;
-}
-.region-sidebar-second .block .field-content a i:hover {
-  color: #003727;
-}
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -6963,4 +6898,65 @@ p:last-child,
 }
 .loc-bot-margin {
   margin-bottom: 15px;
+}
+.ponocna-jeza h2,
+.ponocna-jeza a {
+  color: #42bf9b;
+}
+.ponocna-jeza h2:hover,
+.ponocna-jeza a:hover {
+  color: #3bab8b;
+}
+.pafforama h2,
+.pafforama a {
+  color: #6d69a8;
+}
+.pafforama h2:hover,
+.pafforama a:hover {
+  color: #585492;
+}
+.rani-radovi h2,
+.rani-radovi a {
+  color: #e71d23;
+}
+.rani-radovi h2:hover,
+.rani-radovi a:hover {
+  color: #d0161c;
+}
+.svetionici h2,
+.svetionici a {
+  color: #ee9725;
+}
+.svetionici h2:hover,
+.svetionici a:hover {
+  color: #d58010;
+}
+.svetla-buducnost h2,
+.svetla-buducnost a {
+  color: #ed5ca7;
+}
+.svetla-buducnost h2:hover,
+.svetla-buducnost a:hover {
+  color: #e8308f;
+}
+.the-amazed-spectator h2,
+.the-amazed-spectator a {
+  color: #04b6d6;
+}
+.the-amazed-spectator h2:hover,
+.the-amazed-spectator a:hover {
+  color: #04abc8;
+}
+.region-sidebar-second {
+  margin-left: 10px;
+}
+.region-sidebar-second .block h3 > a:hover,
+.region-sidebar-second .block a:hover {
+  color: #003727;
+}
+.region-sidebar-second .block .field-content a {
+  display: inline-block;
+}
+.region-sidebar-second .block .field-content a i:hover {
+  color: #003727;
 }
