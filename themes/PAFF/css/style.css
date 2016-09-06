@@ -6088,6 +6088,12 @@ button.close {
 .footer.background-img {
   background-position: top center;
 }
+.footer .nav a {
+  display: inline-block;
+}
+.footer .nav a:hover {
+  background-color: transparent;
+}
 .mini-teaser-title {
   font-size: 26px;
 }
@@ -6160,19 +6166,6 @@ button.close {
 .film-margin {
   margin-top: 20px;
   margin-bottom: 10px;
-}
-.region-sidebar-second {
-  margin-left: 10px;
-}
-.region-sidebar-second .block h3 > a:hover,
-.region-sidebar-second .block a:hover {
-  color: #003727;
-}
-.region-sidebar-second .block .field-content a {
-  display: inline-block;
-}
-.region-sidebar-second .block .field-content a i:hover {
-  color: #003727;
 }
 .view-sponsors {
   text-align: center;
@@ -6833,6 +6826,19 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 }
 .the-amazed-spectator h2 {
   color: #04b6d6;
+}
+.region-sidebar-second {
+  margin-left: 10px;
+}
+.region-sidebar-second .block h3 > a:hover,
+.region-sidebar-second .block a:hover {
+  color: #003727;
+}
+.region-sidebar-second .block .field-content a {
+  display: inline-block;
+}
+.region-sidebar-second .block .field-content a i:hover {
+  color: #003727;
 }
 /**
  * jQuery UI autocomplete widget style overrides.
