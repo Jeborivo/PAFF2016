@@ -5019,11 +5019,19 @@ button.list-group-item-danger.active:focus {
 .well-vesti a:hover {
   color: #4e4a82;
 }
+.well-vesti a:focus {
+  outline: none;
+  box-shadow: none;
+}
 .well-film a {
   color: #42bf9b;
 }
 .well-film a:hover {
   color: #003727;
+}
+.well-film a:focus {
+  outline: none;
+  box-shadow: none;
 }
 .well-location a {
   color: #ee9725;
@@ -5031,11 +5039,19 @@ button.list-group-item-danger.active:focus {
 .well-location a:hover {
   color: #f0ad4e;
 }
+.well-location a:focus {
+  outline: none;
+  box-shadow: none;
+}
 .well-event a {
   color: #04b6d6;
 }
 .well-event a:hover {
   color: #0495af;
+}
+.well-event a:focus {
+  outline: none;
+  box-shadow: none;
 }
 .close {
   float: right;
@@ -6287,6 +6303,18 @@ button.close {
 .content .field--name-field-address .field--label {
   font-size: 18px;
   color: #f4b2b4;
+}
+.view-film-event-location .view-content .views-row {
+  border: 1px solid #ffffff;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  padding: 5px 0;
+}
+.view-film-event-location .view-content .views-row:last-child {
+  margin-bottom: 0;
+}
+.path-schedule .field--name-field-image {
+  margin-bottom: 15px;
 }
 /**
  * Alert styling.
