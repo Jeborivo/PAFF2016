@@ -5007,46 +5007,6 @@ button.list-group-item-danger.active:focus {
   background-size: cover;
   padding-bottom: 50px;
 }
-.well-vesti a {
-  color: #6d69a8;
-}
-.well-vesti a:hover {
-  color: #4e4a82;
-}
-.well-vesti a:focus {
-  outline: none;
-  box-shadow: none;
-}
-.well-film a {
-  color: #42bf9b;
-}
-.well-film a:hover {
-  color: #003727;
-}
-.well-film a:focus {
-  outline: none;
-  box-shadow: none;
-}
-.well-location a {
-  color: #ee9725;
-}
-.well-location a:hover {
-  color: #f0ad4e;
-}
-.well-location a:focus {
-  outline: none;
-  box-shadow: none;
-}
-.well-event a {
-  color: #04b6d6;
-}
-.well-event a:hover {
-  color: #0495af;
-}
-.well-event a:focus {
-  outline: none;
-  box-shadow: none;
-}
 .close {
   float: right;
   font-size: 21px;
@@ -6204,13 +6164,14 @@ button.close {
 .region-sidebar-second {
   margin-left: 10px;
 }
-.region-sidebar-second a:hover {
+.region-sidebar-second .block h3 > a:hover,
+.region-sidebar-second .block a:hover {
   color: #003727;
 }
-.region-sidebar-second .field-content a {
+.region-sidebar-second .block .field-content a {
   display: inline-block;
 }
-.region-sidebar-second .field-content a i:hover {
+.region-sidebar-second .block .field-content a i:hover {
   color: #003727;
 }
 .view-sponsors {
@@ -6872,6 +6833,9 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 }
 .the-amazed-spectator h2 {
   color: #04b6d6;
+}
+.pafforama {
+  color: #6d69a8;
 }
 /**
  * jQuery UI autocomplete widget style overrides.
