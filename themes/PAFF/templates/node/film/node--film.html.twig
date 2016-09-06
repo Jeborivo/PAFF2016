@@ -66,7 +66,8 @@
  */
 #}
 {%
-  set classes = [
+set classes = [
+    node.field_selection.0.entity.label|clean_class,
     node.bundle|clean_class,
     node.isPromoted() ? 'is-promoted',
     node.isSticky() ? 'is-sticky',
