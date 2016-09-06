@@ -6263,6 +6263,10 @@ button.close {
 .slick-arrow.slick-hidden {
   display: none;
 }
+.content .field--name-field-address .field--label {
+  font-size: 18px;
+  color: #f4b2b4;
+}
 /**
  * Alert styling.
  */
