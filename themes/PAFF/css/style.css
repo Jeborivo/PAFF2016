@@ -5007,12 +5007,6 @@ button.list-group-item-danger.active:focus {
   background-size: cover;
   padding-bottom: 50px;
 }
-.path-frontpage .region-content .well-vesti a {
-  color: #6d69a8;
-}
-.path-frontpage .region-content .well-vesti a:hover {
-  color: #4e4a82;
-}
 .well-vesti a {
   color: #6d69a8;
 }
@@ -6206,6 +6200,18 @@ button.close {
 .film-margin {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.region-sidebar-second {
+  margin-left: 10px;
+}
+.region-sidebar-second a:hover {
+  color: #003727;
+}
+.region-sidebar-second .field-content a {
+  display: inline-block;
+}
+.region-sidebar-second .field-content a i:hover {
+  color: #003727;
 }
 .view-sponsors {
   text-align: center;
