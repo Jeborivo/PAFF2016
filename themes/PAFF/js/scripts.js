@@ -27,7 +27,8 @@
             arrows: false,
             fade: false,
             asNavFor: '.slider-slider-nav'
-          });-
+          });
+
           $('.slider-slider-nav').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
@@ -37,9 +38,7 @@
             infinite: true,
             prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left fa-5x pull-left"></i></a>',
             nextArrow: '<a class="slick-next"><i class="fa fa-angle-right fa-5x pull-right "></i></a>',
-            swipe: true,
-
-
+            swipe: true
 
           });
         }
