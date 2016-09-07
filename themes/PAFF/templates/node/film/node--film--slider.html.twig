@@ -100,8 +100,11 @@
       <h2{{ title_attributes }} >
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
+
     {% endif %}
-    {{ title_suffix }}    {{content.body}}
+    {{ title_suffix }}
+      <div class="inline-block">{{content.field_selection}}  {{content.field_date_and_time}}  {{content.field_content_reference}}</div>
+      {{content.body}}
   </div>
   </div>
 
