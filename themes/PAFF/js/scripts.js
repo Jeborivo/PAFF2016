@@ -6,14 +6,12 @@
             $('.sponsors-slideshow').slick({
                 autoplay: true,
                 cssEase: 'linear',
-
                 infinite: true,
                 speed: 300,
                 variableWidth: true,
                 slidesToShow: 3,
                 center:true,
-                prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left fa-5x pull-left"></i></a>',
-                nextArrow: '<a class="slick-next"><i class="fa fa-angle-right fa-5x pull-right "></i></a>',
+                arrows:false,
                 centerMode: true
             });
         }
