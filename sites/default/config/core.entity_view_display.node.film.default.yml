@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.film.body
+    - field.field.node.film.field_camera
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
     - field.field.node.film.field_content_reference
@@ -42,6 +43,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+  field_camera:
+    weight: 23
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_cast:
     weight: 11
     label: above

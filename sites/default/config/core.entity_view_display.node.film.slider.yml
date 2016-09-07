@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.slider
     - field.field.node.film.body
+    - field.field.node.film.field_camera
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
     - field.field.node.film.field_content_reference
@@ -150,6 +151,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_selection:
+    type: entity_reference_label
+    weight: 22
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
   field_set_design:
     weight: 10
     label: above
@@ -188,5 +196,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_selection: true
+  field_camera: true
   langcode: true

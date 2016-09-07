@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.list
     - field.field.node.film.body
+    - field.field.node.film.field_camera
     - field.field.node.film.field_cast
     - field.field.node.film.field_contact
     - field.field.node.film.field_content_reference
@@ -74,6 +75,13 @@ content:
       image_style: schedule_style
       image_link: content
     third_party_settings: {  }
+  field_selection:
+    type: entity_reference_label
+    weight: 6
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
   field_title_original:
     weight: 1
     label: above
@@ -82,6 +90,7 @@ content:
     type: text_default
 hidden:
   body: true
+  field_camera: true
   field_cast: true
   field_contact: true
   field_country: true
@@ -92,7 +101,6 @@ hidden:
   field_production: true
   field_screening: true
   field_screenplay: true
-  field_selection: true
   field_set_design: true
   field_shooting: true
   field_sound: true
