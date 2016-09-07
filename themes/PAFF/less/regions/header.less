@@ -60,10 +60,6 @@
   }
 }
 .navbar{
-  .container {
-    margin-top:10px;
-  }
-  min-height: 70px;
   background-color: @brand-primary;
   font-weight: @headings-font-weight;
   color: @text-color;
@@ -73,10 +69,13 @@
     text-transform: uppercase;
     nav {
       display:inline-block;
+      vertical-align: middle;
     }
     .block-language {
       float: right;
       display: inline-block;
+      vertical-align: middle;
+      margin-top: 10px;
       a {
         color: white;
         &:hover {
@@ -105,6 +104,9 @@
         float: none;
       }
     }
+  }
+  .region-navigation{
+    margin: 10px 0;
   }
   @media (min-width: @screen-md){
     .navbar-nav {
@@ -135,6 +137,7 @@
 .path-frontpage .views-element-container{
   position:relative;
   .fa-angle-left {
+    cursor: pointer;
     position: absolute;
     top: 63%;
     transform: translateY(-50%);
