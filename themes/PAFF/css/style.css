@@ -369,6 +369,7 @@ h6,
   font-family: inherit;
   font-weight: 900;
   line-height: 1.1;
+  color: #6ea797;
 }
 h1 small,
 h2 small,
@@ -6902,53 +6903,83 @@ p:last-child,
 .loc-bot-margin {
   margin-bottom: 15px;
 }
-.ponocna-jeza h2,
+.ponocna-jeza h2 {
+  color: #42bf9b;
+}
 .ponocna-jeza a {
   color: #42bf9b;
 }
-.ponocna-jeza h2:hover,
 .ponocna-jeza a:hover {
   color: #3bab8b;
 }
-.pafforama h2,
+.ponocna-jeza a:focus {
+  box-shadow: none;
+  outline: none;
+}
+.pafforama h2 {
+  color: #6d69a8;
+}
 .pafforama a {
   color: #6d69a8;
 }
-.pafforama h2:hover,
 .pafforama a:hover {
   color: #585492;
 }
-.rani-radovi h2,
+.pafforama a:focus {
+  box-shadow: none;
+  outline: none;
+}
+.rani-radovi h2 {
+  color: #e71d23;
+}
 .rani-radovi a {
   color: #e71d23;
 }
-.rani-radovi h2:hover,
 .rani-radovi a:hover {
   color: #d0161c;
 }
-.svetionici h2,
+.rani-radovi a:focus {
+  box-shadow: none;
+  outline: none;
+}
+.svetionici h2 {
+  color: #ee9725;
+}
 .svetionici a {
   color: #ee9725;
 }
-.svetionici h2:hover,
 .svetionici a:hover {
   color: #d58010;
 }
-.svetla-buducnost h2,
+.svetionici a:focus {
+  box-shadow: none;
+  outline: none;
+}
+.svetla-buducnost h2 {
+  color: #ed5ca7;
+}
 .svetla-buducnost a {
   color: #ed5ca7;
 }
-.svetla-buducnost h2:hover,
 .svetla-buducnost a:hover {
   color: #e8308f;
 }
-.the-amazed-spectator h2,
+.svetla-buducnost a:focus {
+  box-shadow: none;
+  outline: none;
+}
+.the-amazed-spectator h2 {
+  color: #04b6d6;
+}
 .the-amazed-spectator a {
   color: #04b6d6;
 }
-.the-amazed-spectator h2:hover,
 .the-amazed-spectator a:hover {
   color: #04abc8;
+}
+.the-amazed-spectator a:focus {
+  box-shadow: none;
+  outline: none;
 }
 .region-sidebar-second {
   margin-left: 10px;
