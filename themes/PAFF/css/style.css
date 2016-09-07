@@ -6083,6 +6083,7 @@ button.close {
   right: 100%;
 }
 .path-frontpage .views-element-container .fa-angle-right {
+  cursor: pointer;
   position: absolute;
   top: 63%;
   transform: translateY(-50%);
