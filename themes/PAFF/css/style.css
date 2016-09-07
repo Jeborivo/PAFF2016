@@ -6166,9 +6166,6 @@ button.close {
 .slider-slider-nav .views-row:hover img {
   opacity: 0.4;
 }
-.block-views-blockdocuments-block-1 {
-  margin-top: 60px;
-}
 .block-views-blockdocuments-block-1 i {
   color: white;
 }
@@ -6921,10 +6918,6 @@ p:last-child,
 .midnight-creeps a:hover {
   color: #3bab8b;
 }
-.midnight-creeps a:focus {
-  box-shadow: none;
-  outline: none;
-}
 .pafforama h2 {
   color: #6d69a8;
 }
@@ -6933,10 +6926,6 @@ p:last-child,
 }
 .pafforama a:hover {
   color: #585492;
-}
-.pafforama a:focus {
-  box-shadow: none;
-  outline: none;
 }
 .early-works h2 {
   color: #e71d23;
@@ -6947,10 +6936,6 @@ p:last-child,
 .early-works a:hover {
   color: #d0161c;
 }
-.early-works a:focus {
-  box-shadow: none;
-  outline: none;
-}
 .lighthouses h2 {
   color: #ee9725;
 }
@@ -6959,10 +6944,6 @@ p:last-child,
 }
 .lighthouses a:hover {
   color: #d58010;
-}
-.lighthouses a:focus {
-  box-shadow: none;
-  outline: none;
 }
 .bright-future h2 {
   color: #ed5ca7;
@@ -6973,10 +6954,6 @@ p:last-child,
 .bright-future a:hover {
   color: #e8308f;
 }
-.bright-future a:focus {
-  box-shadow: none;
-  outline: none;
-}
 .the-amazed-spectator h2 {
   color: #04b6d6;
 }
@@ -6986,16 +6963,22 @@ p:last-child,
 .the-amazed-spectator a:hover {
   color: #04abc8;
 }
-.the-amazed-spectator a:focus {
-  box-shadow: none;
-  outline: none;
-}
 .view-news .content-border {
   border: 5px solid #f4b2b4;
   padding: 20px;
+  margin-top: 15px;
+}
+@media (min-width: 992px) {
+  .view-news .content-border {
+    margin-top: 0;
+  }
 }
 .region-sidebar-second {
   margin-top: 25px;
+}
+.region-sidebar-second .block h2 {
+  display: inline-block;
+  font-size: 26px;
 }
 .region-sidebar-second .block h3 {
   font-size: 22px;
