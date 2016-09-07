@@ -304,11 +304,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
-          granularity: minute
+          granularity: day
           plugin_id: datetime
       title: Schedule
       header:
