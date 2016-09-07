@@ -6097,6 +6097,7 @@ button.close {
 }
 .footer .region-footer nav .menu a {
   display: inline-block;
+  font-weight: bold;
 }
 .footer .region-footer nav .menu a:hover {
   background-color: transparent;
