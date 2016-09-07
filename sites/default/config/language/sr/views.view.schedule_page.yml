@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      title: Program
+  block_2:
+    display_title: Program
+  page_1:
+    display_options:
+      menu:
+        title: Program

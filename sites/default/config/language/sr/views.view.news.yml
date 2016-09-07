@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      title: 'Poslednje vesti'
+  block_1:
+    display_options:
+      title: Vesti
+  page_1:
+    display_options:
+      title: Vesti
+      menu:
+        title: Vesti
+label: Vesti
