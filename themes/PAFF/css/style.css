@@ -3493,9 +3493,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: none;
   }
 }
-.navbar-nav {
-  margin: 7.5px -15px;
-}
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -5969,18 +5966,20 @@ button.close {
   color: #6ea797;
   font-size: 28px;
 }
-.date:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100px;
-  width: 1px;
-  border-right: 1px solid #969696;
-  padding-right: 20px;
-}
 .date {
   color: black;
   font-size: 36px;
+}
+@media (min-width: 768px) {
+  .date:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    width: 1px;
+    border-right: 1px solid #969696;
+    padding-right: 20px;
+  }
 }
 .navbar {
   min-height: 70px;
@@ -6000,6 +5999,7 @@ button.close {
   display: inline-block;
 }
 .navbar .navbar-header .block-language {
+  float: right;
   display: inline-block;
 }
 .navbar .navbar-header .block-language a {
@@ -6024,6 +6024,11 @@ button.close {
   width: 1px;
   margin-left: 5px;
 }
+@media (min-width: 768px) {
+  .navbar .navbar-header .block-language {
+    float: none;
+  }
+}
 @media (min-width: 992px) {
   .navbar .navbar-nav {
     width: 100%;
@@ -6033,7 +6038,6 @@ button.close {
   }
   .navbar .navbar-nav li:first-child a {
     padding-left: 15px;
-    margin-right: 45px;
   }
   .navbar .navbar-nav li + li {
     margin: 0 45px;
@@ -6088,6 +6092,9 @@ button.close {
 .footer.background-img {
   background-position: top center;
 }
+.footer .nav h2 {
+  display: none;
+}
 .footer .nav a {
   display: inline-block;
 }
@@ -6127,6 +6134,11 @@ button.close {
 }
 .news-margin {
   margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .news-margin h2 {
+    margin-top: 0;
+  }
 }
 .slider-slider-nav .views-row {
   position: relative;
@@ -6978,8 +6990,15 @@ p:last-child,
   box-shadow: none;
   outline: none;
 }
+.content-border {
+  border: 5px solid #f4b2b4;
+  padding: 20px;
+}
 .region-sidebar-second {
-  margin-left: 10px;
+  margin-top: 25px;
+}
+.region-sidebar-second .block h3 {
+  font-size: 22px;
 }
 .region-sidebar-second .block h3 > a:hover,
 .region-sidebar-second .block a:hover {
@@ -6990,4 +7009,10 @@ p:last-child,
 }
 .region-sidebar-second .block .field-content a i:hover {
   color: #003727;
+}
+@media (min-width: 992px) {
+  .region-sidebar-second {
+    margin-top: 0;
+    margin-left: 10px;
+  }
 }
