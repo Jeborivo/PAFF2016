@@ -5982,14 +5982,10 @@ button.close {
   }
 }
 .navbar {
-  min-height: 70px;
   background-color: #003727;
   font-weight: 900;
   color: #333333;
   font-size: 28px;
-}
-.navbar .container {
-  margin-top: 10px;
 }
 .navbar .navbar-header {
   width: 100%;
@@ -5997,10 +5993,13 @@ button.close {
 }
 .navbar .navbar-header nav {
   display: inline-block;
+  vertical-align: middle;
 }
 .navbar .navbar-header .block-language {
   float: right;
   display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
 }
 .navbar .navbar-header .block-language a {
   color: white;
@@ -6028,6 +6027,9 @@ button.close {
   .navbar .navbar-header .block-language {
     float: none;
   }
+}
+.navbar .region-navigation {
+  margin: 10px 0;
 }
 @media (min-width: 992px) {
   .navbar .navbar-nav {
@@ -6073,6 +6075,7 @@ button.close {
   position: relative;
 }
 .path-frontpage .views-element-container .fa-angle-left {
+  cursor: pointer;
   position: absolute;
   top: 63%;
   transform: translateY(-50%);
@@ -6100,9 +6103,6 @@ button.close {
 }
 .footer .region-footer nav .menu a:hover {
   background-color: transparent;
-}
-.mini-teaser-title {
-  font-size: 26px;
 }
 .site-wide-margin {
   margin-top: 40px;
@@ -6281,6 +6281,9 @@ button.close {
 }
 .view-film-event-location .view-content .views-row:last-child {
   margin-bottom: 0;
+}
+.view-locations .view-content .views-row .location h2 {
+  font-size: 28px;
 }
 .path-schedule .field--name-field-image {
   margin-bottom: 15px;
