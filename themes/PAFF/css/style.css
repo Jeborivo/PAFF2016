@@ -6092,9 +6092,6 @@ button.close {
 .footer.background-img {
   background-position: top center;
 }
-.footer .nav h2 {
-  display: none;
-}
 .footer .region-footer nav h2 {
   display: none;
 }
@@ -6993,7 +6990,7 @@ p:last-child,
   box-shadow: none;
   outline: none;
 }
-.content-border {
+.view-news .content-border {
   border: 5px solid #f4b2b4;
   padding: 20px;
 }
