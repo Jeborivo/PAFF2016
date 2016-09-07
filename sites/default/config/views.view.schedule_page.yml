@@ -308,7 +308,7 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: day
+          granularity: minute
           plugin_id: datetime
       title: Schedule
       header:
@@ -455,7 +455,7 @@ display:
           type: datetime_custom
           settings:
             timezone_override: ''
-            date_format: 'D, d. M'
+            date_format: 'd. M'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -625,7 +625,7 @@ display:
           type: datetime_custom
           settings:
             timezone_override: ''
-            date_format: 'l d. M'
+            date_format: 'd. M'
           group_column: value
           group_columns: {  }
           group_rows: true

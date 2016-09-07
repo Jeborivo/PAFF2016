@@ -5,10 +5,11 @@ dependencies: {  }
 name: slider
 label: Slider
 effects:
-  fdb1997c-71c9-4fe6-ac33-32793650b840:
-    uuid: fdb1997c-71c9-4fe6-ac33-32793650b840
-    id: image_scale_and_crop
-    weight: 1
+  dc4c0e79-2446-4734-8065-32c30b74ae4b:
+    uuid: dc4c0e79-2446-4734-8065-32c30b74ae4b
+    id: image_scale
+    weight: 2
     data:
       width: 750
       height: 450
+      upscale: true
