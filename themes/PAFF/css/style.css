@@ -6289,6 +6289,9 @@ button.close {
 .path-schedule .field--name-field-image {
   margin-bottom: 15px;
 }
+.path-schedule .content h2 {
+  margin-top: 10px;
+}
 /**
  * Alert styling.
  */
