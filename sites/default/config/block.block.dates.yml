@@ -2,6 +2,10 @@ uuid: c391dc6c-d1f8-491b-ba09-8b26227d14bf
 langcode: en
 status: false
 dependencies:
+  content:
+    - 'block_content:basic:3985bbb4-38e9-490a-80df-779865888274'
+  module:
+    - block_content
   theme:
     - PAFF
 id: dates

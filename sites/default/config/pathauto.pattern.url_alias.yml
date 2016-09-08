@@ -1,0 +1,26 @@
+uuid: 0769b1b1-103e-4481-a08f-12023a8eb079
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: url_alias
+label: 'url alias'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  2ebc9a68-47eb-457d-844c-3f388011d130:
+    id: node_type
+    bundles:
+      article: article
+      event: event
+      film: film
+      location: location
+      person: person
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2ebc9a68-47eb-457d-844c-3f388011d130
+selection_logic: and
+weight: -5
+relationships: {  }
