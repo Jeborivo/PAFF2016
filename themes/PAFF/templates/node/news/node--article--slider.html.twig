@@ -75,10 +75,8 @@
     'clearfix',
   ]
 %}
+{% set date = node.createdtime|format_date('M H:i') %}
 <article{{ attributes.addClass(classes) }}>
-
-
-
   {% if display_submitted %}
     <footer>
       {{ author_picture }}
@@ -99,6 +97,10 @@
       {% if not page %}
       <h2{{ title_attributes }}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        <span>
+     <h4>   {{date}}
+     </h4>
+   </span>
       </h2>
       {% endif %}
       {{ title_suffix }}

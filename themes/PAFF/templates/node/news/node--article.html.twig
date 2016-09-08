@@ -75,12 +75,9 @@
     'clearfix',
   ]
 %}
+{% set date = node.createdtime|format_date('M H:i') %}
+
 <article{{ attributes.addClass(classes) }}>
-
-
-
-
-
   <div {{ content_attributes.addClass('content, row') }}>
       <div>
           <div class="col-md-4 film-margin">
@@ -91,7 +88,11 @@
            <div class="col-md-8">
                <h2{{ title_attributes }}>
                  {{ label }}
-               </h2>
+                 <span>
+              <h4>   {{ date }}
+              </h4>
+            </span>
+          </h2>
             {{ content.body }}
           </div>
         </div>
