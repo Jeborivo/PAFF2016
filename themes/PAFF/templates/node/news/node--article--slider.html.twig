@@ -75,7 +75,7 @@
     'clearfix',
   ]
 %}
-{% set date = node.createdtime|format_date('M H:i') %}
+{% set date = node.createdtime|format_date('simple_date_and_time') %}
 <article{{ attributes.addClass(classes) }}>
   {% if display_submitted %}
     <footer>
