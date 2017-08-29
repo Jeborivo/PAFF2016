@@ -6965,6 +6965,11 @@ a:hover,
 a:focus {
   outline: none;
 }
+@media (min-width: 768px) {
+  .view-news .news-margin .content > div {
+    display: flex;
+  }
+}
 .loc-top-margin {
   margin-top: 15px;
 }
