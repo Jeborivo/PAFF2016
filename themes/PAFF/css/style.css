@@ -6311,9 +6311,17 @@ button.close {
     align-items: center;
     justify-content: center;
   }
-  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide .col-md-6:first-child img {
+  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide:hover,
+  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide:focus {
+    outline: 0;
+  }
+  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide img {
     margin: 0 auto;
   }
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .content .field--name-field-address .field--label {
   font-size: 18px;

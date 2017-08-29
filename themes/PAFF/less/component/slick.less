@@ -117,13 +117,22 @@
                 height: auto;
                 align-items: center; //optional
                 justify-content: center; //optional
-                .col-md-6:first-child{
+                &:hover,
+                &:focus{
+                    outline: 0;
+                }
                     img{
                         margin: 0 auto;
                     }
-                }
             }
         }
     }
 
+}
+
+
+// boom
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
