@@ -71,6 +71,11 @@
         display: none;
     }
 
+    &:hover,
+    &:focus{
+        outline: 0;
+    }
+
     display: none;
 
     &.dragging img {
@@ -117,10 +122,6 @@
                 height: auto;
                 align-items: center; //optional
                 justify-content: center; //optional
-                &:hover,
-                &:focus{
-                    outline: 0;
-                }
                     img{
                         margin: 0 auto;
                     }

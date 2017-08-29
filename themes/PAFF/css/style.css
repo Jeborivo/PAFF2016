@@ -6274,6 +6274,10 @@ button.close {
 .slick-slide.slick-loading img {
   display: none;
 }
+.slick-slide:hover,
+.slick-slide:focus {
+  outline: 0;
+}
 .slick-slide.dragging img {
   pointer-events: none;
 }
@@ -6310,10 +6314,6 @@ button.close {
     height: auto;
     align-items: center;
     justify-content: center;
-  }
-  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide:hover,
-  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide:focus {
-    outline: 0;
   }
   .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide img {
     margin: 0 auto;
