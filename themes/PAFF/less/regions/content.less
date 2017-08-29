@@ -14,6 +14,7 @@
 .region-sidebar-second{
   .block{
     .well;
+    background-color: @brand-blocks;
   }
   .block-title {
   text-align: center;
@@ -35,26 +36,49 @@
   .views-row {
     position:relative;
     .views-field-title {
-      display: none;
+      display:block;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 10px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      z-index: 5;
+      font-size: 15px;
+      text-transform: uppercase;
+      a{
+        color: white;
+        &:before{
+          content:"";
+          display: block;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    img {
+      display: block;
+      -webkit-filter: grayscale(1);
+      -webkit-filter: grayscale(100%);
+      filter: gray;
+      filter: grayscale(100%);
+      transition: all 0.2s ease;
     }
       &:hover {
-        background-color: rgba(0, 0, 0, 1);
+        // background-color: rgba(0, 0, 0, 1);
         .views-field-title {
-          display:block;
-          position: absolute;
-          width: 100%;
-          top: 50%;
-          transform: translateY(-50%);
-          padding: 0 10px;
-          text-align: center;
-          font-size: 22px;
-          font-weight: bold;
+
             a {
             color: white;
             }
           }
       img {
-        opacity: 0.4;
+            filter: none;
       }
     }
   }
@@ -70,4 +94,9 @@
 .film-margin{
   margin-top:20px;
   margin-bottom: 10px;
+}
+
+
+.slick-arrow{
+  color: black!important;
 }
