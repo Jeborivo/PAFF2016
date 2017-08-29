@@ -94,3 +94,36 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+// make flex columns in slider and even them out
+// this is shame this was done in a day
+.view-slider .slick-slider.slider-slider-for{
+    @media (min-width: @screen-sm-min) {
+        .slider > .content > div:not(.col-md-6),
+        .slider > .content{
+            display: flex;
+            float: none;
+            align-items: center;
+            .col-md-6{
+                float: none;
+            }
+        }
+        .slick-track{
+            display: flex;
+
+            .slick-slide{
+                display: flex;
+                height: auto;
+                align-items: center; //optional
+                justify-content: center; //optional
+                .col-md-6:first-child{
+                    img{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+}

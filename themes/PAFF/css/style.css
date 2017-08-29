@@ -6149,11 +6149,9 @@ button.close {
   position: relative;
 }
 .slider-slider-nav .views-row .views-field-title {
-  display: block;
   position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
   padding: 0 10px;
   text-align: center;
   font-size: 22px;
@@ -6162,6 +6160,8 @@ button.close {
   z-index: 5;
   font-size: 15px;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.72);
+  display: block;
 }
 .slider-slider-nav .views-row .views-field-title a {
   color: white;
@@ -6290,6 +6290,30 @@ button.close {
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+@media (min-width: 768px) {
+  .view-slider .slick-slider.slider-slider-for .slider > .content > div:not(.col-md-6),
+  .view-slider .slick-slider.slider-slider-for .slider > .content {
+    display: flex;
+    float: none;
+    align-items: center;
+  }
+  .view-slider .slick-slider.slider-slider-for .slider > .content > div:not(.col-md-6) .col-md-6,
+  .view-slider .slick-slider.slider-slider-for .slider > .content .col-md-6 {
+    float: none;
+  }
+  .view-slider .slick-slider.slider-slider-for .slick-track {
+    display: flex;
+  }
+  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .view-slider .slick-slider.slider-slider-for .slick-track .slick-slide .col-md-6:first-child img {
+    margin: 0 auto;
+  }
 }
 .content .field--name-field-address .field--label {
   font-size: 18px;
