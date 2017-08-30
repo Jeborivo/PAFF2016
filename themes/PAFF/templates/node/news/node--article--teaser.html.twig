@@ -78,22 +78,23 @@
 {% set date = node.createdtime|format_date('simple_date_and_time') %}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      <span>
-   <h4>  {{date}}
-   </h4>
- </span>
-    </h2>
-  {% endif %}
+
   {{ title_suffix }}
   <div {{ content_attributes.addClass('content') }}>
       <div class="col-md-3">
           {{content.field_image}}
       </div>
+        {{ title_prefix }}
       <div class="col-md-9">
+        {% if not page %}
+          <h2{{ title_attributes }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            <span>
+        <h4>  {{date}}
+        </h4>
+      </span>
+          </h2>
+        {% endif %}
           {{content.body}}
       </div>
   </div>
