@@ -7,7 +7,7 @@ use Zumba\GastonJS\Exception\DeadClient;
 use Zumba\Mink\Driver\PhantomJSDriver;
 
 /**
- * Runs a browser test using PhantomJS.
+ * Runs a browser test using a driver that supports Javascript.
  *
  * Base class for testing browser interaction implemented in JavaScript.
  */
@@ -15,6 +15,9 @@ abstract class JavascriptTestBase extends BrowserTestBase {
 
   /**
    * {@inheritdoc}
+   *
+   * To use a webdriver based approach, please use DrupalSelenium2Driver::class.
+   * We will switch the default later.
    */
   protected $minkDefaultDriverClass = PhantomJSDriver::class;
 
@@ -22,14 +25,19 @@ abstract class JavascriptTestBase extends BrowserTestBase {
    * {@inheritdoc}
    */
   protected function initMink() {
-    // Set up the template cache used by the PhantomJS mink driver.
-    $path = $this->tempFilesDirectory . DIRECTORY_SEPARATOR . 'browsertestbase-templatecache';
-    $this->minkDefaultDriverArgs = [
-      'http://127.0.0.1:8510',
-      $path,
-    ];
-    if (!file_exists($path)) {
-      mkdir($path);
+    if ($this->minkDefaultDriverClass === DrupalSelenium2Driver::class) {
+      $this->minkDefaultDriverArgs = ['chrome', NULL, 'http://localhost:4444/'];
+    }
+    elseif ($this->minkDefaultDriverClass === PhantomJSDriver::class) {
+      // Set up the template cache used by the PhantomJS mink driver.
+      $path = $this->tempFilesDirectory . DIRECTORY_SEPARATOR . 'browsertestbase-templatecache';
+      $this->minkDefaultDriverArgs = [
+        'http://127.0.0.1:8510',
+        $path,
+      ];
+      if (!file_exists($path)) {
+        mkdir($path);
+      }
     }
 
     try {
@@ -38,7 +46,7 @@ abstract class JavascriptTestBase extends BrowserTestBase {
     catch (DeadClient $e) {
       $this->markTestSkipped('PhantomJS is either not installed or not running. Start it via phantomjs --ssl-protocol=any --ignore-ssl-errors=true vendor/jcalderonzumba/gastonjs/src/Client/main.js 8510 1024 768&');
     }
-    catch (Exception $e) {
+    catch (\Exception $e) {
       $this->markTestSkipped('An unexpected error occurred while starting Mink: ' . $e->getMessage());
     }
   }
@@ -47,18 +55,33 @@ abstract class JavascriptTestBase extends BrowserTestBase {
    * {@inheritdoc}
    */
   protected function tearDown() {
-    // Wait for all requests to finish. It is possible that an AJAX request is
-    // still on-going.
-    $result = $this->getSession()->wait(5000, '(typeof(jQuery)=="undefined" || (0 === jQuery.active && 0 === jQuery(\':animated\').length))');
-    if (!$result) {
-      // If the wait is unsuccessful, there may still be an AJAX request in
-      // progress. If we tear down now, then this AJAX request may fail with
-      // missing database tables, because tear down will have removed them. Rather
-      // than allow it to fail, throw an explicit exception now explaining what
-      // the problem is.
-      throw new \RuntimeException('Unfinished AJAX requests whilst tearing down a test');
+    if ($this->mink) {
+      // Wait for all requests to finish. It is possible that an AJAX request is
+      // still on-going.
+      $result = $this->getSession()->wait(5000, '(typeof(jQuery)=="undefined" || (0 === jQuery.active && 0 === jQuery(\':animated\').length))');
+      if (!$result) {
+        // If the wait is unsuccessful, there may still be an AJAX request in
+        // progress. If we tear down now, then this AJAX request may fail with
+        // missing database tables, because tear down will have removed them.
+        // Rather than allow it to fail, throw an explicit exception now
+        // explaining what the problem is.
+        throw new \RuntimeException('Unfinished AJAX requests while tearing down a test');
+      }
     }
     parent::tearDown();
+  }
+
+  /**
+    * {@inheritdoc}
+    */
+  protected function getMinkDriverArgs() {
+    if ($this->minkDefaultDriverClass === DrupalSelenium2Driver::class) {
+      return getenv('MINK_DRIVER_ARGS_WEBDRIVER') ?: getenv('MINK_DRIVER_ARGS_PHANTOMJS') ?: parent::getMinkDriverArgs();
+    }
+    elseif ($this->minkDefaultDriverClass === PhantomJSDriver::class) {
+      return getenv('MINK_DRIVER_ARGS_PHANTOMJS') ?: parent::getMinkDriverArgs();
+    }
+    return parent::getMinkDriverArgs();
   }
 
   /**
@@ -97,7 +120,7 @@ abstract class JavascriptTestBase extends BrowserTestBase {
    * @param string $condition
    *   JS condition to wait until it becomes TRUE.
    * @param int $timeout
-   *   (Optional) Timeout in milliseconds, defaults to 1000.
+   *   (Optional) Timeout in milliseconds, defaults to 10000.
    * @param string $message
    *   (optional) A message to display with the assertion. If left blank, a
    *   default message will be displayed.
@@ -106,7 +129,7 @@ abstract class JavascriptTestBase extends BrowserTestBase {
    *
    * @see \Behat\Mink\Driver\DriverInterface::evaluateScript()
    */
-  protected function assertJsCondition($condition, $timeout = 1000, $message = '') {
+  protected function assertJsCondition($condition, $timeout = 10000, $message = '') {
     $message = $message ?: "Javascript condition met:\n" . $condition;
     $result = $this->getSession()->getDriver()->wait($timeout, $condition);
     $this->assertTrue($result, $message);
@@ -140,7 +163,39 @@ abstract class JavascriptTestBase extends BrowserTestBase {
    * {@inheritdoc}
    */
   public function assertSession($name = NULL) {
-    return new JSWebAssert($this->getSession($name), $this->baseUrl);
+    return new WebDriverWebAssert($this->getSession($name), $this->baseUrl);
+  }
+
+  /**
+   * Gets the current Drupal javascript settings and parses into an array.
+   *
+   * Unlike BrowserTestBase::getDrupalSettings(), this implementation reads the
+   * current values of drupalSettings, capturing all changes made via javascript
+   * after the page was loaded.
+   *
+   * @return array
+   *   The Drupal javascript settings array.
+   *
+   * @see \Drupal\Tests\BrowserTestBase::getDrupalSettings()
+   */
+  protected function getDrupalSettings() {
+    $script = <<<EndOfScript
+(function () {
+  if (typeof drupalSettings !== 'undefined') {
+    return drupalSettings;
+  }
+})();
+EndOfScript;
+
+    return $this->getSession()->evaluateScript($script) ?: [];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function getHtmlOutputHeaders() {
+    // The webdriver API does not support fetching headers.
+    return '';
   }
 
 }
